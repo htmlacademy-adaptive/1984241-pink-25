@@ -14,7 +14,8 @@
           <path d="M55.9384 1.38904C55.9228 1.21262 55.944 1.03487 56.0005 0.867114C56.0571 0.699353 56.1479 0.545245 56.267 0.414596C56.3862 0.283947 56.5311 0.179616 56.6926 0.108238C56.8541 0.0368607 57.0286 0 57.2051 0C57.3815 0 57.5561 0.0368607 57.7176 0.108238C57.8791 0.179616 58.024 0.283947 58.1431 0.414596C58.2623 0.545245 58.353 0.699353 58.4096 0.867114C58.4662 1.03487 58.4874 1.21262 58.4718 1.38904V13.6837L71.2282 0.551443C71.4899 0.279712 71.8455 0.119105 72.2216 0.10273C72.5468 0.115453 72.8548 0.252812 73.0821 0.486531C73.3094 0.72025 73.4388 1.03254 73.4436 1.35912C73.4366 1.52896 73.3961 1.69572 73.3245 1.84975C73.2529 2.00379 73.1516 2.14205 73.0264 2.25655L65.0785 10.1539L73.6523 20.6836C73.8764 20.9441 73.9998 21.2768 74 21.6209C73.9961 21.7933 73.9583 21.9633 73.8887 22.121C73.8191 22.2786 73.719 22.4209 73.5943 22.5395C73.4696 22.6582 73.3228 22.7509 73.1622 22.8123C73.0016 22.8737 72.8305 22.9026 72.6588 22.8973C72.4588 22.8891 72.2639 22.8322 72.0908 22.7314C71.9177 22.6306 71.7716 22.4891 71.6653 22.3189L63.3001 11.859L58.4718 16.7051V21.591C58.4718 21.7573 58.4391 21.922 58.3757 22.0756C58.3123 22.2293 58.2194 22.3689 58.1022 22.4865C57.9851 22.6041 57.846 22.6973 57.6929 22.761C57.5398 22.8246 57.3757 22.8574 57.21 22.8574C57.0443 22.8574 56.8803 22.8246 56.7272 22.761C56.5741 22.6973 56.435 22.6041 56.3179 22.4865C56.2007 22.3689 56.1078 22.2293 56.0443 22.0756C55.9809 21.922 55.9483 21.7573 55.9483 21.591V1.38904H55.9384Z" fill="white"/>
         </svg>
       </a>
-      <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <!-- <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button> -->
+      <button class="main-header__toggle" type="button" aria-label="Открыть меню"></button>
       <h1 class="visually-hidden">Приложение PINK.</h1>
       <p class="main-header__tagline main-title">Взгляните на жизнь иначе!</p>
       <section class="download">
@@ -46,7 +47,6 @@
       </section>
     </header>
     <main class="main-container">
-      <!-- <div class="advantages-wrapper"> -->
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества PINK</h2>
         <p class="advantages__intro main-title">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
@@ -57,18 +57,20 @@
           <p class="advantages__main-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           <h3 class="advantages__main">Заводит новых друзей</h3>
           <p class="advantages__main-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          <img class="advantages__phone-image" src="#" alt="Телефон с приветствием.">
+          <img class="advantages__phone-image" src="../source/img/iphone-3.png" alt="Телефон с приветствием.">
+          <img class="advantages__screen-image" src="../source/img/iphone_screen-3.jpg" alt="Скрин телефона с приветствием.">
         </div>
       </section>
-      <!-- </div> -->
       <section class="review">
         <h2 class="visually-hidden">Отзывы о PINK</h2>
         <div class="review__main-slider">
-          <h3 class="review__author">Николай Петров</h3>
-          <blockquote class="review__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+          <blockquote class="review__description">
+            <cite class="review__author">Николай Петров</cite>
+            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
         </div>
         <div class="review__buttons button-slider">
-          <button class="button-slider__toggle--active"></button>
+          <button class="button-slider__toggle button-slider__toggle--active"></button>
           <button class="button-slider__toggle"></button>
           <button class="button-slider__toggle"></button>
         </div>
@@ -108,7 +110,7 @@
         </div>
         <div class="pink-store__buttons button-slider">
           <button class="button-slider__toggle"></button>
-          <button class="button-slider__toggle--active"></button>
+          <button class="button-slider__toggle button-slider__toggle--active"></button>
           <button class="button-slider__toggle"></button>
         </div>
       </section>
