@@ -3,25 +3,33 @@
   align-items: center;
   text-align: center;
   margin: 36px auto;
-  color: @color-white-1;
+  color: @color-light;
   font-size: 24px;
   line-height: 33px;
   font-weight: 300;
   width: 228px;
 }
 
-.form {
-  // width: 280px;
-  // margin: auto;
-}
-
 .form-send__user {
+  border: none;
   width: 280px;
 }
 
-.checkbox {
-  background-color: @color-gray;
+.form-send__checkbox {
+  border: none;
+  width: 280px;
+  background-color: @color-dim;
   margin: auto;
+}
+
+.form-send__contact {
+  border: none;
+  width: 280px;
+}
+
+.form-send__platform {
+  border: none;
+  width: 280px;
 }
 
 .user__item {
@@ -36,7 +44,7 @@
 }
 
 .user__item-head {
-  color: @color-red;
+  color: @color-form-headers;
   align-items: center;
   text-align: center;
   margin: 54px 200px 55px 43px;
@@ -49,13 +57,12 @@
   margin: 17px 22px 29px;
   width: 276px;
   height: 59px;
-  border-color: @color-gray;
-  box-sizing: border-box;
+  border-color: @color-dim2;
   padding-left: 20px;
 }
 
 .description {
-  color: @color-red;
+  color: @color-form-headers;
   align-items: center;
   text-align: center;
   font-size: 14px;
@@ -71,6 +78,7 @@
 }
 
 .form-send__ul {
+  .drop-list-style;
   margin-left: 22px;
   margin-bottom: 42px;
 }
@@ -86,7 +94,7 @@
 .form-send__user-head {
   width: 130px;
   height: 20px;
-  color: @color-red;
+  color: @color-form-headers;
   align-items: center;
   text-align: center;
   margin: 42px 0 17px 44px;
@@ -99,8 +107,7 @@
   margin: 17px 22px 29px;
   width: 276px;
   height: 59px;
-  border-color: @color-gray;
-  box-sizing: border-box;
+  border-color: @color-dim2;
   padding-left: 20px;
 }
 
@@ -116,7 +123,7 @@
 
 .form-send__button {
   margin: 0 22px 46px;
-  background-color: @color-green;
+  background-color: @color-button-send;
   border: none;
   border-radius: 4px;
   width: 276px;
