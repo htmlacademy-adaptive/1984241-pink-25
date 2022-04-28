@@ -1,24 +1,48 @@
 .main-header {
-  width: 320px;
+  width: 100%;
   height: 462px;
   background-image: url("/img/img-back/back-mobile.jpg");
+  background-size: cover;
+  background-position: 0 0;
   background-color: @color-dark;
   background-repeat: no-repeat;
   position: relative;
 }
 
-.main-header__catalog {
+.header-catalog {
   height: 237px;
   color: @color-dark;
 }
 
 .main-header__screen-phone {
   position: absolute;
-  left: 105px;
-  top: 208px;
+  bottom: 0;
+  left: 0;
+  width: 260px;
+  height: 286px;
+  background-image: url("/img/img-back/phone.png");
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    left: 30%;
+    // background-image: url("/img/img-back/phone.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    // left: 80%;
+    // background-image: url("/img/img-back/phone.png");
+  }
+}
+
+.main-header__screen-phone::after {
+  content: "";
+  position: absolute;
+  left: 104px;
+  top: 32px;
   width: 111px;
   height: 197px;
   background-image: url("/img/img-back/screen-phone-1.png");
+  background-repeat: no-repeat;
 }
 
 .main-title {
@@ -30,7 +54,8 @@
 }
 
 .main-header__background-phone {
-  width: 320px;
+  // width: 320px;
+  width: 100%;
   height: 286px;
   position: absolute;
   bottom: 0;
