@@ -1,8 +1,19 @@
 .catalog__description {
-  margin: 54px auto 0;
-  width: 280px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 250px;
   height: 184px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    width: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 450px;
+  }
 }
