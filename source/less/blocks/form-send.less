@@ -30,6 +30,17 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    width: 490px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 756px;
+  }
 }
 
 .form-send__label {
@@ -46,8 +57,6 @@
   margin: 17px 22px 29px;
   width: 276px;
   height: 59px;
-  border-color: @color-dim2;
-  padding-left: 20px;
 }
 
 .form-send__checkboxes {
@@ -93,6 +102,10 @@
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
+
+  // @media (min-width: @tablet-width) {
+  //   width: 490px;
+  // }
 }
 
 .form-send__checkbox-label {
