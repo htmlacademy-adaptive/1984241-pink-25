@@ -19,7 +19,7 @@
   @media (min-width: @desktop-width) {
     // position: relative;
     background-image: url("/img/img-back/back-desktop.jpg");
-    background-position: center;
+    // background-position: center;
     background-size: 100%;
     min-height: 853px;
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@
     // bottom: 0;
     // width: 660px;
     // height: 545px;
-    background-image: url("/img/img-back/phone-tablet.png");
+    // background-image: url("/img/img-back/phone-tablet.png");
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -62,6 +62,10 @@
 
   @media (min-width: @tablet-width) {
     background-image: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 853px;
   }
 }
 
@@ -83,14 +87,16 @@
     background-repeat: no-repeat;
   }
 
-  // @media (min-width: @tablet-width) {
-  //   background-image: none;
-  // }
-
-  // @media (min-width: @desktop-width) {
-  //   left: 80%;
-  //   background-image: url("/img/img-back/phone.png");
-  // }
+  @media (min-width: @desktop-width) {
+    position: relative;
+    bottom: 265px;
+    width: 1200px;
+    background-position: right;
+    height: 645px;
+    background-image: url("/img/img-back/phone-desk.png");
+    background-repeat: no-repeat;
+    margin: auto;
+  }
 }
 
 .main-header__screen-phone::after {
@@ -104,7 +110,6 @@
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
-    // background-image: none;
     background-image: url("/img/img-back/screen-tablet.png");
     background-repeat: no-repeat;
     width: 195px;
@@ -113,9 +118,13 @@
     top: 54px;
   }
 
-  // @media (min-width: @desktop-width) {
-
-  // }
+  @media (min-width: @desktop-width) {
+    background-image: url("/img/img-back/screen-desk.png");
+    width: 230px;
+    height: 408px;
+    left: 720px;
+    top: 64px;
+  }
 }
 
 .main-title {
@@ -149,6 +158,15 @@
     font-size: 50px;
     line-height: 68px;
     width: 356px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    width: 300px;
+    left: -300px;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
   }
 }
 

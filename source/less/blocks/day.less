@@ -17,7 +17,11 @@
 }
 
 .day__inner {
-  display: flex;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    max-width: 660px;
+    margin: auto;
+  }
 }
 
 .day__title {
@@ -25,7 +29,7 @@
   font-size: 96px;
   line-height: 75px;
   color: @color-form-headers;
-  margin-left: 40px;
+  // margin-left: 40px;
   margin-right: 72px;
   padding: 116px 64px 85px 64px;
   background-image: url("/img/img-back/timer.png");
@@ -38,7 +42,7 @@
     line-height: 163px;
     padding: 108px 80px 106px 80px;
     margin-right: 71px;
-    margin-left: 131px;
+    // margin-left: 131px;
     background-image: url("/img/img-back/timer-desktop.png");
     // background-size: 298px 345px;
     background-repeat: no-repeat;
