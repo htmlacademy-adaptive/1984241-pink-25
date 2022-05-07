@@ -3,6 +3,17 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 725px;
+    margin: auto;
+  }
+
+  // @media (min-width: @desktop-width) {
+
+  // }
 }
 
 .form-send__comment {
@@ -56,7 +67,19 @@
 .form-send__input {
   margin: 17px 22px 29px;
   width: 276px;
-  height: 59px;
+  height: 60px;
+
+  @media (min-width: @tablet-width) {
+    width: 561px;
+  }
+}
+
+.form-send__reverse {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+    // width: 1000px;
+  }
 }
 
 .form-send__checkboxes {
@@ -64,6 +87,11 @@
   width: 280px;
   background-color: @color-dim;
   margin: auto;
+
+  @media (min-width: @tablet-width) {
+    background-color: @color-light;
+    max-width: 616px;
+  }
 }
 
 .form-send__contact {
@@ -82,6 +110,10 @@
   text-align: center;
   border: none;
   background-color: @color-dim;
+
+  @media (min-width: @tablet-width) {
+    background-color: @color-light;
+  }
 }
 
 .form-send__radio-list {

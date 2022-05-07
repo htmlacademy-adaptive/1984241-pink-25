@@ -10,14 +10,14 @@
     <header class="main-header">
       <div class="main-header__nav">
         <nav class="main-nav main-nav-close">
-        <div class="main-nav__wrapper">
-          <a class="main-nav__logo" href="#">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="/img/svg/logotype-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="/img/svg/logotype-white-tablet.svg">
-              <img src="/img/svg/pink.svg" alt="Pink">
-            </picture>
-          </a>
+          <div class="main-nav__wrapper">
+            <a class="main-nav__logo" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="/img/svg/logotype-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="/img/svg/logotype-white-tablet.svg">
+                <img src="/img/svg/pink.svg" alt="Pink">
+              </picture>
+            </a>
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="#">Главная</a>
@@ -33,14 +33,14 @@
               </li>
             </ul>
           </div>
-        <div class="main-nav__toggle-wrapper">
-          <a class="main-nav__toggle" href="#" aria-label="Открыть меню">
-            <span class="main-nav__toggle-span"></span>
-          </a>
-        </div>
-        <h1 class="visually-hidden">Приложение PINK.</h1>
+          <div class="main-nav__toggle-wrapper">
+            <a class="main-nav__toggle" href="#" aria-label="Открыть меню">
+              <span class="main-nav__toggle-span"></span>
+            </a>
+          </div>
+          <h1 class="visually-hidden">Приложение PINK.</h1>
         </nav>
-        <p class="main-header__tagline main-title">Взгляните на жизнь иначе!</p>
+        <p class="main-header__tagline ">Взгляните на жизнь иначе!</p>
         <div class="main-header__screen-phone"></div>
       </div>
       <section class="download">
@@ -221,7 +221,14 @@
           </li>
         </ul>
         <div class="map">
-          <img class="map__image" src="../img/map.jpg" alt="Карта расположения офиса Pink.">
+
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../img/map-desk.png">
+            <source media="(min-width: 660px)" srcset="../img/map-tablet.png">
+            <img src="../img/map.jpg" alt="Карта расположения офиса Pink.">
+          </picture>
+
+          <!-- <img class="map__image" src="../img/map.jpg" alt="Карта расположения офиса Pink."> -->
           <div class="map__marker">
             <!-- <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M18 0C21.5601 0 25.0402 1.05568 28.0003 3.03355C30.9604 5.01141 33.2675 7.82263 34.6298 11.1117C35.9922 14.4008 36.3487 18.02 35.6541 21.5116C34.9596 25.0033 33.2453 28.2106 30.7279 30.7279C28.2106 33.2453 25.0033 34.9596 21.5116 35.6541C18.02 36.3487 14.4008 35.9922 11.1117 34.6298C7.82263 33.2675 5.01141 30.9604 3.03355 28.0003C1.05568 25.0402 0 21.5601 0 18C0 13.2261 1.89642 8.64773 5.27208 5.27208C8.64773 1.89642 13.2261 0 18 0V0Z" fill="white"/>
