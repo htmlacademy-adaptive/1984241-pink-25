@@ -1,36 +1,134 @@
 .main-header {
-  width: 320px;
-  height: 462px;
-  background-image: url("/img/img-back/back-mobile.jpg");
-  background-color: @color-dark;
-  background-repeat: no-repeat;
-  position: relative;
+  width: 100%;
+  // background-image: url("/img/img-back/back-mobile.jpg");
+  background-size: cover;
+  // background-position: 0 0;
+  // background-color: @color-dark;
+  background-color: @color-dark-background;
+  // background-repeat: no-repeat;
+  // position: relative;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/img-back/back-tablet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 662px;
+  }
+
+  @media (min-width: @desktop-width) {
+    // position: relative;
+    background-image: url("/img/img-back/back-desktop.jpg");
+    // background-position: center;
+    background-size: 100%;
+    min-height: 853px;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
 }
 
 .main-header__catalog {
+  background-image: url("/img/img-back/back-mobile.jpg");
+  background-size: cover;
   height: 237px;
   color: @color-dark;
+
+  @media (min-width: @tablet-width) {
+    height: 440px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 394px;
+  }
+}
+
+.main-header__phone-tablet {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    // bottom: 0;
+    // width: 660px;
+    // height: 545px;
+    // background-image: url("/img/img-back/phone-tablet.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.main-header__nav {
+  background-image: url("/img/img-back/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 853px;
+  }
 }
 
 .main-header__screen-phone {
+  // position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 260px;
+  height: 286px;
+  background-image: url("/img/img-back/phone.png");
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: 0;
+    width: 660px;
+    height: 545px;
+    background-image: url("/img/img-back/phone-tablet.png");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    bottom: 265px;
+    width: 1200px;
+    background-position: right;
+    height: 645px;
+    background-image: url("/img/img-back/phone-desk.png");
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+}
+
+.main-header__screen-phone::after {
+  content: "";
   position: absolute;
-  left: 105px;
-  top: 208px;
+  left: 104px;
+  top: 185px;
   width: 111px;
   height: 197px;
   background-image: url("/img/img-back/screen-phone-1.png");
-}
+  background-repeat: no-repeat;
 
-.main-title {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 24px;
-  line-height: 29px;
-  font-weight: 300;
-  color: @color-dark;
+  @media (min-width: @tablet-width) {
+    background-image: url("/img/img-back/screen-tablet.png");
+    background-repeat: no-repeat;
+    width: 195px;
+    height: 346px;
+    left: 371px;
+    top: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("/img/img-back/screen-desk.png");
+    width: 230px;
+    height: 408px;
+    left: 720px;
+    top: 64px;
+  }
 }
 
 .main-header__background-phone {
-  width: 320px;
+  width: 100%;
   height: 286px;
   position: absolute;
   bottom: 0;
@@ -43,17 +141,54 @@
   color: @color-light;
   font-weight: 300;
   font-size: 24px;
-  line-height: 120%;
+  line-height: 33px;
+
+  @media (min-width: @tablet-width) {
+    // margin: 100px 0 0 50px;
+    margin: 81px auto;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+    width: 356px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    width: 300px;
+    left: -300px;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .main-header__offer {
+  // position: absolute;
+  // top: 50px;
   display: flex;
   align-items: center;
   text-align: center;
-  margin: 36px auto;
+  margin: auto;
   color: @color-light;
   font-size: 24px;
   line-height: 33px;
   font-weight: 300;
   width: 228px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 71px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    top: -800px;
+    left: 40px;
+    // margin: auto;
+    width: 747px;
+    max-width: 1200px;
+  }
 }

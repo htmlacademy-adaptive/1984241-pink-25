@@ -3,10 +3,21 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 309px;
-  width: 320px;
+  width: 100%;
   min-height: 271px;
-  background-color: @color-dark-background;
+  // background-color: @color-dark-background;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: -160px;
+    bottom: 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    left: -300px;
+    bottom: 100px;
+  }
 }
 
 .download__app {
