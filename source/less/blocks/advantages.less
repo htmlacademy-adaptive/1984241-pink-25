@@ -1,14 +1,18 @@
 .advantages {
-  min-width: 320px;
-  min-height: 690px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: @color-dim;
+  position: relative;
 }
 
 .advantages__intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 46px;
-  // margin: 46px;
-  min-width: 320px;
-  min-height: 250px;
+  width: 100%;
   background-color: @color-light;
 }
 
@@ -22,14 +26,29 @@
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
+
+  @media (min-width: @tablet-width) {
+    width: 590px;
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 300;
+  }
 }
 
 .advantages__wrapper {
   display: flex;
   flex-direction: column;
   width: 280px;
-  margin: 23px auto 0;
   position: relative;
+  padding-top: 53px;
+
+  @media (min-width: @tablet-width) {
+    height: 500px;
+    // min-width: 300px;
+    // flex-direction: row;
+    flex-wrap: wrap-reverse;
+    align-content: flex-start;
+  }
 }
 
 .advantages__main {
@@ -39,8 +58,6 @@
   min-width: 280px;
   height: 14px;
   font-size: 18px;
-  // margin-bottom: 24px;
-  // line-height: 24px;
   font-weight: 700;
   color: @color-dark;
 }
@@ -60,12 +77,22 @@
 
 .advantages__phone-image {
   margin: 48px auto;
+
+  @media (min-width: @tablet-width) {
+    // flex-wrap: wrap;
+    // flex-basis: 100%;
+  }
 }
 
 .advantages__screen-image {
   width: 136px;
   height: 245px;
   position: absolute;
-  top: 480px;
+  top: 540px;
   left: 72px;
+
+  @media (min-width: @tablet-width) {
+    top: 140px;
+    left: -145px;
+  }
 }
