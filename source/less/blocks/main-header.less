@@ -1,12 +1,7 @@
 .main-header {
   width: 100%;
-  // background-image: url("/img/img-back/back-mobile.jpg");
   background-size: cover;
-  // background-position: 0 0;
-  // background-color: @color-dark;
   background-color: @color-dark-background;
-  // background-repeat: no-repeat;
-  // position: relative;
 
   @media (min-width: @tablet-width) {
     background-image: url("/img/img-back/back-tablet.png");
@@ -17,7 +12,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    // position: relative;
     background-image: url("/img/img-back/back-desktop.jpg");
     // background-position: center;
     background-size: 100%;
@@ -30,14 +24,17 @@
 .main-header__catalog {
   background-image: url("/img/img-back/back-mobile.jpg");
   background-size: cover;
+  // background-color: @color-dark;
   height: 237px;
   color: @color-dark;
 
   @media (min-width: @tablet-width) {
+    background-image: url("/img/img-back/back-tablet.png");
     height: 440px;
   }
 
   @media (min-width: @desktop-width) {
+    background-image: url("/img/img-back/back-desktop.jpg");
     height: 394px;
   }
 }
@@ -65,7 +62,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    height: 853px;
+    height: 440px;
   }
 }
 
@@ -89,7 +86,7 @@
 
   @media (min-width: @desktop-width) {
     position: relative;
-    bottom: 265px;
+    bottom: 200px;
     width: 1200px;
     background-position: right;
     height: 645px;
@@ -144,7 +141,6 @@
   line-height: 33px;
 
   @media (min-width: @tablet-width) {
-    // margin: 100px 0 0 50px;
     margin: 81px auto;
     font-weight: 300;
     font-size: 50px;
@@ -154,8 +150,9 @@
 
   @media (min-width: @desktop-width) {
     position: relative;
-    width: 300px;
+    width: 353px;
     left: -300px;
+    // top: -350px;
     font-weight: 300;
     font-size: 50px;
     line-height: 68px;
@@ -185,10 +182,9 @@
 
   @media (min-width: @desktop-width) {
     position: relative;
-    top: -800px;
-    left: 40px;
-    // margin: auto;
-    width: 747px;
-    max-width: 1200px;
+    bottom: 380px;
+    // left: 40px;
+    // width: 747px;
+    // max-width: 1200px;
   }
 }
