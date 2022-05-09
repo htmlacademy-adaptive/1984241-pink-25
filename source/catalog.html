@@ -41,7 +41,7 @@
         <h1 class="visually-hidden">Каталог приложения PINK.</h1>
       </nav>
       </div>
-      <h1 class="main-header__tagline">Фотографии пользователей</h1>
+      <h1 class="main-header__tagline main-header__tagline-catalog">Фотографии пользователей</h1>
     </header>
     <main class="main-catalog">
       <section class="catalog">
@@ -70,11 +70,12 @@
             <picture class="catalog-list_photo">
               <source media="(min-width: 1200px)" srcset="/img/img-catalog/photo-1-desktop.jpg">
               <source media="(min-width: 660px)" srcset="/img/img-catalog/photo-1-tablet.jpg">
-              <img src="../img/img-catalog/photo-1-mobile.jpg" alt="Рекламная съёмка белого легкового автомобиля.">
+            <img src="../img/img-catalog/photo-1-mobile.jpg" alt="Рекламная съёмка белого легкового автомобиля.">
             </picture>
             <!-- <img src="../img/img-catalog/photo-1-mobile.jpg" alt="Рекламная съёмка белого легкового автомобиля."> -->
             <blockquote class="catalog-list__description">
               <cite class="catalog-list__name">Левон<span class="catalog-list__time"> (5 часов назад)</span></cite>
+              <!-- <p class="catalog-list__time">(5 часов назад)</p> -->
               <p class="catalog-list__note">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <div class="catalog-list__like">
                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -93,6 +94,7 @@
             <!-- <img src="../img/img-catalog/photo-2-mobile.jpg" alt="Ударная установка в квартире."> -->
             <blockquote class="catalog-list__description">
               <cite class="catalog-list__name">Антон<span class="catalog-list__time"> (12 часов назад)</span></cite>
+              <!-- <p class="catalog-list__time">(12 часов назад)</p> -->
               <p class="catalog-list__note">Соседи будут рады!</p>
               <div class="catalog-list__like">
                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -111,6 +113,7 @@
             <!-- <img src="../img/img-catalog/photo-3-mobile.jpg" alt="Небо сквозь стеклянную крышу."> -->
             <blockquote class="catalog-list__description">
               <cite class="catalog-list__name">Борис<span class="catalog-list__time"> (20 часов назад)</span></cite>
+              <!-- <p class="catalog-list__time">(20 часов назад)</p> -->
               <p class="catalog-list__note">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <div class="catalog-list__like">
               <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,6 +122,7 @@
               <p class="catalog-list__number">Нравится: 215</p>
             </div>
             </blockquote>
+            <!-- </div> -->
           </li>
           <li class="catalog-list__card">
             <picture class="catalog-list_photo">
@@ -129,6 +133,7 @@
             <!-- <img src="../img/img-catalog/photo-4-mobile.jpg" alt="Рынок Кубанская бахча."> -->
             <blockquote class="catalog-list__description">
               <cite class="catalog-list__name">Сергей<span class="catalog-list__time"> (25 часов назад)</span></cite>
+              <!-- <p class="catalog-list__time">(25 часов назад)</p> -->
               <p class="catalog-list__note">Самая кубанская в мире!</p>
               <div class="catalog-list__like">
                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -147,6 +152,7 @@
             <!-- <img src="../img/img-catalog/photo-5-mobile.jpg" alt="Горы с зеленью под ногами."> -->
             <blockquote class="catalog-list__description">
               <cite class="catalog-list__name">Максим<span class="catalog-list__time"> (40 часов назад)</span></cite>
+              <!-- <p class="catalog-list__time">(40 часов назад)</p> -->
               <p class="catalog-list__note">Где снег-то?</p>
               <div class="catalog-list__like">
                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -165,6 +171,7 @@
             <!-- <img src="../img/img-catalog/photo-6-mobile.jpg" alt="Залитое солнцем крыло самолета в полете."> -->
             <blockquote class="catalog-list__description">
               <cite class="catalog-list__name">Надежда<span class="catalog-list__time"> (45 часов назад)</span></cite>
+              <!-- <p class="catalog-list__time">(45 часов назад)</p> -->
               <p class="catalog-list__note">Всем GM и взаимные лайки!</p>
               <div class="catalog-list__like">
                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -178,7 +185,7 @@
       </section>
       <section class="photo-setting">
         <div class="photo-setting__wrap">
-          <h2 class="photo-setting__description">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</h2>
+        <h2 class="photo-setting__description">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</h2>
         </div>
         <form class="photo-setting__form">
           <input class="visually-hidden" type="file" id="photo-user">
@@ -189,22 +196,22 @@
             </picture>
           </label>
             <div class="photo-setting__tools-block">
-            <div class="photo-setting__tools">
-              <button class="photo-setting__tool" type="button" aria-label="Обрезка фото">
+          <div class="photo-setting__tools">
+            <button class="photo-setting__tool" type="button" aria-label="Обрезка фото">
               <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z" fill="#D22856"/></svg>
-              </button>
-              <button class="photo-setting__tool" type="button" aria-label="Скорректировать фото">
-                <svg width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645"><path d="M33.12 17.88 15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11a3 3 0 0 0 4.24 0l11-11a3 3 0 0 0 0-4.24ZM10.41 20 20 10.42 29.59 20H10.41ZM38 23s-4 4.33-4 7a4 4 0 1 0 8 0c0-2.67-4-7-4-7ZM48 40H0v3h48v-3Z"/></g></svg>
-              </button>
-              <button class="photo-setting__tool" type="button" aria-label="Контрастность фото">
+            </button>
+            <button class="photo-setting__tool" type="button" aria-label="Скорректировать фото">
+              <svg width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645"><path d="M33.12 17.88 15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11a3 3 0 0 0 4.24 0l11-11a3 3 0 0 0 0-4.24ZM10.41 20 20 10.42 29.59 20H10.41ZM38 23s-4 4.33-4 7a4 4 0 1 0 8 0c0-2.67-4-7-4-7ZM48 40H0v3h48v-3Z"/></g></svg>
+            </button>
+            <button class="photo-setting__tool" type="button" aria-label="Контрастность фото">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645"><path d="M16 4a12 12 0 1 1 0 24 12 12 0 0 1 0-24Zm0-4a16 16 0 1 0 0 32 16 16 0 0 0 0-32Z"/><path d="M16 24.29a8.52 8.52 0 0 0 0-17"/></g></svg>
-              </button>
-              </div>
-              <input class="photo-setting__range" type="range" name="zoom-photo" min="1" max="10" value="8">
+            </button>
+          </div>
+          <input class="photo-setting__range" type="range" name="zoom-photo" min="1" max="10" value="8">
               <hr class="photo-setting__line">
-              <div class="photo-setting__send">
-              <button class="photo-setting__button" type="button">Запостить</button>
-              <button class="photo-setting__button" type="button">Отмена</button>
+          <div class="photo-setting__send">
+            <button class="photo-setting__button" type="button">Запостить</button>
+            <button class="photo-setting__button" type="button">Отмена</button>
             </div>
           </div>
         </form>
