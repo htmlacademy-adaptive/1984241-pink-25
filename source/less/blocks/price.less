@@ -3,11 +3,13 @@
   color: @color-dark;
   padding-top: 81px;
   padding-bottom: 49px;
-  min-width: 280px;
+  // max-width: 320px;
+  margin: auto;
 
   @media (min-width: @tablet-width) {
     padding-top: 114px;
     padding-bottom: 70px;
+    max-width: 100%;
   }
 }
 
@@ -23,7 +25,8 @@
 }
 
 .price__container {
-  min-width: 280px;
+  // min-width: 280px;
+  width: 320px;
   margin: 0 auto;
   padding: 0 20px;
 
@@ -133,6 +136,12 @@
   }
 }
 
+.price__card-choice {
+  display: flex;
+  float: right;
+  padding-right: 17px;
+}
+
 .price__card {
   width: 100%;
   border-spacing: 0;
@@ -163,6 +172,11 @@
   @media (min-width: @tablet-width) {
     border: 2px solid @color-dim2;
     width: 25%;
+    padding-left: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 100px;
   }
 }
 

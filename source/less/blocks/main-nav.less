@@ -14,7 +14,7 @@
 
 .main-nav-close {
   display: flex;
-  background-color: @color-dark;
+  // background-color: @color-dark;
   border-bottom: 1px solid rgb(0, 0, 0);
   // width: 100%;
   // margin: auto;
@@ -29,6 +29,8 @@
     border: none;
   }
 }
+
+// .main-nav__list--opened
 
 .main-nav__wrapper {
   @media (min-width: @desktop-width) {
@@ -139,6 +141,8 @@
 .main-nav__toggle-span::before,
 .main-nav__toggle-span::after {
   content: "";
+  display: block;
+  transition: 0.5s;
 }
 
 .main-nav__toggle-span::before {
@@ -151,4 +155,20 @@
   border-radius: 1px;
 }
 
+.main-nav__toggle-active span::before {
+  transform: rotate(35deg);
+}
+
 // \---------end-menu-btn----------/
+
+.main-header__top--active {
+  background-color: @color-dark;
+}
+
+.main-nav__list--opened {
+  display: block;
+}
+
+.main-nav__list--closed {
+  display: none;
+}
