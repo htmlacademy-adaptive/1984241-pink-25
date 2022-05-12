@@ -155,8 +155,60 @@
   border-radius: 1px;
 }
 
-.main-nav__toggle-active span::before {
-  transform: rotate(35deg);
+// .main-nav__toggle-active span::before {
+//   transform: rotate(35deg);
+// }
+
+
+//Это бургер, который открывает меню
+// .main-header__toggle::before {
+//   content: "";
+//   display: block;
+//   width: 50px;
+//   height: 4px;
+//   background-color: @white;
+//   border-radius: 3px;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   z-index: 1;
+//   box-shadow: 0 10px 0 0 @white, 0 20px 0 0 @white;
+// }
+
+//Это крестик, который закрывает меню
+.main-header__toggle--active {
+  top: 0;
+  right: -23px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 4px;
+    background-color: @color-form-headers;
+
+    @media (min-width: @tablet-width) {
+      top: 17px;
+      right: 20px;
+    }
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: @color-dark-background;
+  }
 }
 
 // \---------end-menu-btn----------/

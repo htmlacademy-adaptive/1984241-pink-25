@@ -1,72 +1,77 @@
 .price {
+  padding-top: 91px;
+  padding-bottom: 32px;
+  height: 481px;
   background-color: @color-dim;
-  color: @color-dark;
-  padding-top: 81px;
-  padding-bottom: 49px;
-  // max-width: 320px;
-  margin: auto;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    padding-top: 114px;
-    padding-bottom: 70px;
-    max-width: 100%;
-  }
-}
-
-.price__table {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-    width: 100%;
-    border-spacing: 0;
-    border-collapse: collapse;
-  }
-}
-
-.price__container {
-  // min-width: 280px;
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
-
-  @media (min-width: @tablet-width) {
-    width: 620px;
-    margin: 0 auto;
-    padding: 0 20px;
+    padding-top: 90px;
+    padding-bottom: 69px;
+    height: 387px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 20px;
+    padding-top: 150px;
+    padding-bottom: 95px;
+    height: 534px;
+    background-size: 100% 80px;
+  }
+}
+
+.price::before {
+  content: "";
+  height: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  //-webkit-clip-path: polygon(0 100%, 0 0, 100% 0);
+  clip-path: polygon(0 100%, 0 0, 100% 0);
+  background-color: @color-light;
+
+  @media (min-width: @tablet-width) {
+    height: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 100px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 980px;
   }
 }
 
 .price__slider {
+  padding-top: 9px;
+  overflow: hidden;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.price__table {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: left 0.4s linear;
+
   @media (min-width: @tablet-width) {
-    display: none;
+    position: static;
+    left: auto;
+    transform: none;
   }
-}
-
-.price__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  background-color: @color-light;
-}
-
-.price__item:first-child {
-  display: none;
-}
-
-.price__item:last-child {
-  display: none;
-}
-
-.price__hit {
-  color: @color-light;
-  margin: 20px -50px -20px 20px;
 }
 
 .price__toggles {
@@ -77,123 +82,3 @@
   }
 }
 
-.price__card-title {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: @color-light;
-  background-color: @color-dark;
-  text-align: center;
-  border-right: 2px solid @color-dim;
-  border-left: 2px solid @color-dim;
-
-  @media (min-width: @tablet-width) {
-    width: 25%;
-  }
-
-  @media (min-width: @desktop-width) {
-    font-size: 18px;
-    line-height: 13px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-
-.price__tag {
-  display: block;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 30px;
-
-  @media (min-width: @desktop-width) {
-    font-size: 24px;
-    line-height: 18px;
-    padding-top: 15px;
-  }
-}
-
-.price__card-subtitle {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 10px;
-  text-transform: uppercase;
-  color: #283645;
-  padding: 24px 17px 25px 20px;
-  border: 2px solid @color-dim2;
-
-  @media (min-width: @tablet-width) {
-    text-transform: none;
-    padding: 18px 24px 17px 15px;
-    width: 25%;
-  }
-
-  @media (min-width: @desktop-width) {
-    font-size: 18px;
-    line-height: 13px;
-    padding: 23px 65px 23px 22px;
-    white-space: nowrap;
-  }
-}
-
-.price__card-choice {
-  display: flex;
-  float: right;
-  padding-right: 17px;
-}
-
-.price__card {
-  width: 100%;
-  border-spacing: 0;
-  border-collapse: collapse;
-}
-
-.price__card-filter {
-  border-top: none;
-
-  @media (min-width: @tablet-width) {
-    border-top: 2px solid @color-dim2;
-  }
-}
-
-.price__card-base {
-  @media (min-width: @tablet-width) {
-    border-left: 2px solid @color-dark;
-  }
-}
-
-.price__card-anlim {
-  @media (min-width: @tablet-width) {
-    border-right: 2px solid #283645;
-  }
-}
-
-.price__card-cell {
-  @media (min-width: @tablet-width) {
-    border: 2px solid @color-dim2;
-    width: 25%;
-    padding-left: 60px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 100px;
-  }
-}
-
-.price__card-item {
-  @media (min-width: @tablet-width) {
-    background-color: @color-light;
-  }
-}
-
-.price__card-border {
-  @media (min-width: @tablet-width) {
-    border-top: 2px solid @color-dark;
-  }
-}
-
-.price__card-empty {
-  @media (min-width: @tablet-width) {
-    background-color: @color-dim;
-  }
-}
