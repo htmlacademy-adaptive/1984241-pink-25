@@ -8,8 +8,8 @@ themeButton.onclick = function() {
 // const btnToggle = document.querySelector('.main-header__toggle');
 const mainHeader = document.querySelector('.main-nav');
 
-themeButton.addEventListener('click', function() {
-themeButton.classList.toggle('main-header__toggle--active');
-mainHeader.classList.toggle('main-header__top--active');
-})
+// themeButton.addEventListener('click', function() {
+// themeButton.classList.toggle('main-header__toggle--active');
+// mainHeader.classList.toggle('main-header__top--active');
+// })
      

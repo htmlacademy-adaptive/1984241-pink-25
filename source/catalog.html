@@ -7,40 +7,38 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page">
-    <header class="main-header__catalog">
-      <div class="main-header__nav">
+    <header class="main-header main-header__catalog">
         <nav class="main-nav main-nav-close">
-        <a class="main-nav__logo" href="/index.html">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="/img/svg/logotype-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="/img/svg/logotype-white-tablet.svg">
-            <img src="/img/svg/pink.svg" alt="Pink">
-          </picture>
-        </a>
+          <a class="main-nav__logo" href="/index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="/img/svg/logotype-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="/img/svg/logotype-white-tablet.svg">
+              <img src="/img/svg/pink.svg" alt="Pink">
+            </picture>
+          </a>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="main-nav__link" href="../index.html">главная</a>
+          <ul class="main-nav__list main-nav__list--closed main-nav__list--nojs">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a class="main-nav__link" href="#">фотографии</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="../catalog.html">Фотографии</a>
             </li>
-            <li class="site-list__item">
-              <a class="main-nav__link" href="../form.html">конкурс</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="../form.html">Конкурс</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </div>
-        <div class="main-nav__toggle-wrapper">
+        <div class="main-nav__toggle-wrapper main-nav__toggle-wrapper--active">
           <a class="main-nav__toggle" href="#" aria-label="Открыть меню">
             <span class="main-nav__toggle-span"></span>
           </a>
         </div>
         <h1 class="visually-hidden">Каталог приложения PINK.</h1>
       </nav>
-      </div>
       <h1 class="main-header__tagline main-header__tagline-catalog">Фотографии пользователей</h1>
     </header>
     <main class="main-catalog">
@@ -72,10 +70,8 @@
               <source media="(min-width: 660px)" srcset="/img/img-catalog/photo-1-tablet.jpg">
             <img src="../img/img-catalog/photo-1-mobile.jpg" alt="Рекламная съёмка белого легкового автомобиля.">
             </picture>
-            <!-- <img src="../img/img-catalog/photo-1-mobile.jpg" alt="Рекламная съёмка белого легкового автомобиля."> -->
             <blockquote class="catalog-list__description">
               <cite class="catalog-list__name">Левон<span class="catalog-list__time"> (5 часов назад)</span></cite>
-              <!-- <p class="catalog-list__time">(5 часов назад)</p> -->
               <p class="catalog-list__note">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <div class="catalog-list__like">
                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,10 +87,8 @@
               <source media="(min-width: 660px)" srcset="/img/img-catalog/photo-2-tablet.jpg">
               <img src="../img/img-catalog/photo-2-mobile.jpg" alt="Рекламная съёмка белого легкового автомобиля.">
             </picture>
-            <!-- <img src="../img/img-catalog/photo-2-mobile.jpg" alt="Ударная установка в квартире."> -->
             <blockquote class="catalog-list__description">
               <cite class="catalog-list__name">Антон<span class="catalog-list__time"> (12 часов назад)</span></cite>
-              <!-- <p class="catalog-list__time">(12 часов назад)</p> -->
               <p class="catalog-list__note">Соседи будут рады!</p>
               <div class="catalog-list__like">
                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -110,10 +104,8 @@
               <source media="(min-width: 660px)" srcset="/img/img-catalog/photo-3-tablet.jpg">
               <img src="../img/img-catalog/photo-3-mobile.jpg" alt="Рекламная съёмка белого легкового автомобиля.">
             </picture>
-            <!-- <img src="../img/img-catalog/photo-3-mobile.jpg" alt="Небо сквозь стеклянную крышу."> -->
             <blockquote class="catalog-list__description">
               <cite class="catalog-list__name">Борис<span class="catalog-list__time"> (20 часов назад)</span></cite>
-              <!-- <p class="catalog-list__time">(20 часов назад)</p> -->
               <p class="catalog-list__note">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <div class="catalog-list__like">
               <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -184,37 +176,71 @@
         </ul>
       </section>
       <section class="photo-setting">
-        <div class="photo-setting__wrap">
-        <h2 class="photo-setting__description">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</h2>
-        </div>
-        <form class="photo-setting__form">
-          <input class="visually-hidden" type="file" id="photo-user">
-          <label for="photo-user">
-            <picture class="catalog-list_photo">
-              <source media="(min-width: 660px)" srcset="/img/img-catalog/photo-7-tablet.jpg">
-              <img src="../img/img-catalog/photo-7-mobile.jpg" alt="Рекламная съёмка белого легкового автомобиля.">
-            </picture>
-          </label>
-            <div class="photo-setting__tools-block">
-          <div class="photo-setting__tools">
-            <button class="photo-setting__tool" type="button" aria-label="Обрезка фото">
-              <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z" fill="#D22856"/></svg>
-            </button>
-            <button class="photo-setting__tool" type="button" aria-label="Скорректировать фото">
-              <svg width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645"><path d="M33.12 17.88 15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11a3 3 0 0 0 4.24 0l11-11a3 3 0 0 0 0-4.24ZM10.41 20 20 10.42 29.59 20H10.41ZM38 23s-4 4.33-4 7a4 4 0 1 0 8 0c0-2.67-4-7-4-7ZM48 40H0v3h48v-3Z"/></g></svg>
-            </button>
-            <button class="photo-setting__tool" type="button" aria-label="Контрастность фото">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645"><path d="M16 4a12 12 0 1 1 0 24 12 12 0 0 1 0-24Zm0-4a16 16 0 1 0 0 32 16 16 0 0 0 0-32Z"/><path d="M16 24.29a8.52 8.52 0 0 0 0-17"/></g></svg>
-            </button>
+        <header class="photo-setting__header">
+          <div class="photo-setting__container">
+            <h2 class="visually-hidden">Добавить свою фотографию</h2>
+            <p class="photo-setting__title">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
           </div>
-          <input class="photo-setting__range" type="range" name="zoom-photo" min="1" max="10" value="8">
-              <hr class="photo-setting__line">
-          <div class="photo-setting__send">
-            <button class="photo-setting__button" type="button">Запостить</button>
-            <button class="photo-setting__button" type="button">Отмена</button>
+        </header>
+        <div class="photo-setting__form photo-setting__container">
+          <form class="upload-form" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
+            <input class="visually-hidden" type="file" id="image" name="image">
+            <label class="upload-form__image" for="image" aria-label="Загрузите фотографию"></label>
+            <div class="upload-form__controls">
+              <div class="upload-form__filters">
+                <div class="upload-form__filters-buttons">
+                  <button class="upload-form__filter-button upload-form__filter-button--current" type="button" aria-label="Обрезка">
+                    <svg class="upload-form__icon-button upload-form__icon-button--current" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z"/>
+                    </svg>
+                  </button>
+                  <button class="upload-form__filter-button" type="button" aria-label="Заливка">
+                    <svg class="upload-form__icon-button" width="48" height="43" viewBox="0 0 48 43" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M33.12 17.88L15.24 0L12.41 2.83L17.17 7.59L6.88 17.88C6.3182 18.4425 6.00264 19.205 6.00264 20C6.00264 20.795 6.3182 21.5575 6.88 22.12L17.88 33.12C18.4425 33.6818 19.205 33.9974 20 33.9974C20.795 33.9974 21.5575 33.6818 22.12 33.12L33.12 22.12C33.6818 21.5575 33.9974 20.795 33.9974 20C33.9974 19.205 33.6818 18.4425 33.12 17.88ZM10.41 20L20 10.42L29.59 20H10.41ZM38 23C38 23 34 27.33 34 30C34 31.0609 34.4214 32.0783 35.1716 32.8284C35.9217 33.5786 36.9391 34 38 34C39.0609 34 40.0783 33.5786 40.8284 32.8284C41.5786 32.0783 42 31.0609 42 30C42 27.33 38 23 38 23Z"/>
+                      <path d="M48 40H0V43H48V40Z"/>
+                    </svg>
+                  </button>
+                  <button class="upload-form__filter-button" type="button" aria-label="Контрастность">
+                    <svg class="upload-form__icon-button" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 4C18.3734 4 20.6935 4.70379 22.6669 6.02236C24.6402 7.34094 26.1783 9.21509 27.0866 11.4078C27.9948 13.6005 28.2325 16.0133 27.7694 18.3411C27.3064 20.6689 26.1635 22.8071 24.4853 24.4853C22.8071 26.1635 20.6689 27.3064 18.3411 27.7694C16.0133 28.2324 13.6005 27.9948 11.4078 27.0866C9.21509 26.1783 7.34095 24.6402 6.02237 22.6668C4.70379 20.6935 4.00001 18.3734 4.00001 16C4.00001 12.8174 5.26429 9.76515 7.51473 7.51472C9.76516 5.26428 12.8174 4 16 4ZM16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0Z"/>
+                      <path d="M16 24.29C18.1536 24.1422 20.1708 23.1824 21.644 21.6046C23.1172 20.0268 23.9366 17.9486 23.9366 15.79C23.9366 13.6314 23.1172 11.5532 21.644 9.97538C20.1708 8.39759 18.1536 7.43782 16 7.29"/>
+                    </svg>
+                  </button>
+                </div>
+                <div class="upload-form__filter upload-form__filter--current">
+                  <div class="upload-form__icon-wrapper">
+                    <svg class="upload-form__icon upload-form__icon--crop" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 14H18V6C18 5.46957 17.7893 4.96086 17.4142 4.58579C17.0391 4.21071 16.5304 4 16 4H8V6H16V14ZM6 16V0H4V4H0V6H4V16C4 16.5304 4.21071 17.0391 4.58579 17.4142C4.96086 17.7893 5.46957 18 6 18H16V22H18V18H22V16H6Z" fill="#D22856"/>
+                    </svg>
+                  </div>
+                  <input class="upload-form__filter-range" type="range" min="1" max="100" name="crop" value="85">
+                </div>
+                <div class="upload-form__filter">
+                  <div class="upload-form__icon-wrapper">
+                    <svg class="upload-form__icon upload-form__icon--fill" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.56 9.14791L7.62 0L6.205 1.44791L8.585 3.88326L3.44 9.14791C3.1591 9.4357 3.00132 9.82581 3.00132 10.2326C3.00132 10.6393 3.1591 11.0294 3.44 11.3172L8.94 16.9451C9.22125 17.2325 9.6025 17.394 10 17.394C10.3975 17.394 10.7787 17.2325 11.06 16.9451L16.56 11.3172C16.8409 11.0294 16.9987 10.6393 16.9987 10.2326C16.9987 9.82581 16.8409 9.4357 16.56 9.14791ZM5.205 10.2326L10 5.33116L14.795 10.2326H5.205ZM19 11.7674C19 11.7674 17 13.9828 17 15.3488C17 15.8916 17.2107 16.4121 17.5858 16.7959C17.9609 17.1797 18.4696 17.3953 19 17.3953C19.5304 17.3953 20.0391 17.1797 20.4142 16.7959C20.7893 16.4121 21 15.8916 21 15.3488C21 13.9828 19 11.7674 19 11.7674Z" fill="#D22856"/>
+                      <path d="M24 20.4651H0V22H24V20.4651Z" fill="#D22856"/>
+                    </svg>
+                  </div>
+                  <input class="upload-form__filter-range" type="range" min="1" max="100" name="fill" value="15">
+                </div>
+                <div class="upload-form__filter">
+                  <div class="upload-form__icon-wrapper">
+                    <svg class="upload-form__icon upload-form__icon--contrast" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 2C9.18669 2 10.3467 2.35189 11.3334 3.01118C12.3201 3.67047 13.0892 4.60754 13.5433 5.7039C13.9974 6.80025 14.1162 8.00665 13.8847 9.17054C13.6532 10.3344 13.0818 11.4035 12.2426 12.2426C11.4035 13.0818 10.3344 13.6532 9.17054 13.8847C8.00666 14.1162 6.80026 13.9974 5.7039 13.5433C4.60755 13.0891 3.67047 12.3201 3.01119 11.3334C2.3519 10.3467 2 9.18669 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2ZM8 0C6.41775 0 4.87103 0.469192 3.55544 1.34824C2.23985 2.22729 1.21447 3.47672 0.608967 4.93853C0.00346625 6.40034 -0.15496 8.00887 0.153721 9.56072C0.462403 11.1126 1.22433 12.538 2.34315 13.6569C3.46197 14.7757 4.88743 15.5376 6.43928 15.8463C7.99113 16.155 9.59966 15.9965 11.0615 15.391C12.5233 14.7855 13.7727 13.7602 14.6518 12.4446C15.5308 11.129 16 9.58225 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0Z" fill="#D22856"/>
+                      <path d="M8 12.145C9.07679 12.0711 10.0854 11.5912 10.822 10.8023C11.5586 10.0134 11.9683 8.97432 11.9683 7.895C11.9683 6.81567 11.5586 5.77659 10.822 4.98769C10.0854 4.1988 9.07679 3.71891 8 3.645" fill="#D22856"/>
+                    </svg>
+                  </div>
+                  <input class="upload-form__filter-range" type="range" min="1" max="100" name="contrast" value="50">
+                </div>
+              </div>
+              <div class="upload-form__buttons">
+                <button class="upload-form__button button button--rounded button--red" type="submit">Запостить</button>
+                <button class="upload-form__button button button--rounded button--gray" type="reset">Отмена</button>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="footer-social">
@@ -274,5 +300,6 @@
       </div>
     </div>
   </footer>
+  <script src="/js/script.js"></script>
   </body>
 </html>

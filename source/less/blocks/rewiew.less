@@ -1,19 +1,35 @@
 .review {
-  min-height: 364px;
   position: relative;
-  z-index: 2;
   text-align: center;
   padding-top: 24px;
   padding-bottom: 33px;
+  min-height: 220px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 41px;
+    padding-bottom: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 185px;
+    padding-bottom: 40px;
+    background-image: url("/img/decor/quotes.png");
+    background-repeat: no-repeat;
+    background-position: 50% 73px;
+    background-size: 79px 63px;
+  }
 }
 
 .review__main-slider {
-  padding: 45px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  background-color: @color-light;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 600px;
+  }
 }
 
 .review__description {
@@ -50,9 +66,15 @@
 }
 
 .review__author-posicion {
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400;
+  @media (max-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+  }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
@@ -75,12 +97,9 @@
   }
 }
 
-.review__author-quotes {
-  @media (min-width: @desktop-width) {
-    background-image: url("/img/decor/quotes.png");
-    background-repeat: no-repeat;
-    // position: relative;
-    // z-index: 4;
-    background-color: rgb(107, 210, 210);
-  }
+.review__arrows {
+  margin: 0 auto;
+  max-width: 900px;
+  padding-left: 20px;
+  padding-right: 20px;
 }

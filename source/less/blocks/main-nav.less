@@ -30,8 +30,6 @@
   }
 }
 
-// .main-nav__list--opened
-
 .main-nav__wrapper {
   @media (min-width: @desktop-width) {
     display: flex;
@@ -160,7 +158,7 @@
 // }
 
 
-//Это бургер, который открывает меню
+//burg open
 // .main-header__toggle::before {
 //   content: "";
 //   display: block;
@@ -175,52 +173,4 @@
 //   box-shadow: 0 10px 0 0 @white, 0 20px 0 0 @white;
 // }
 
-//Это крестик, который закрывает меню
-.main-header__toggle--active {
-  top: 0;
-  right: -23px;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 30px;
-    height: 4px;
-    background-color: @color-form-headers;
-
-    @media (min-width: @tablet-width) {
-      top: 17px;
-      right: 20px;
-    }
-  }
-
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-
-  &:active::before,
-  &:active::after {
-    background-color: @color-dark-background;
-  }
-}
-
 // \---------end-menu-btn----------/
-
-.main-header__top--active {
-  background-color: @color-dark;
-}
-
-.main-nav__list--opened {
-  display: block;
-}
-
-.main-nav__list--closed {
-  display: none;
-}

@@ -21,6 +21,7 @@
     display: flex;
     max-width: 660px;
     margin: auto;
+    gap: 30px;
   }
 }
 
@@ -43,6 +44,7 @@
     line-height: 163px;
     padding: 108px 80px 106px 80px;
     margin-right: 71px;
+    margin-left: -150px;
     // margin-left: 131px;
     background-image: url("/img/img-back/timer-desktop.png");
     // background-size: 298px 345px;
@@ -101,12 +103,13 @@
   width: 300px;
 
   @media (min-width: @desktop-width) {
+    width: 530px;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     margin-top: 37px;
     margin-bottom: 47px;
-    max-width: 540px;
+    // max-width: 540px;
 
     & br {
       display: none;

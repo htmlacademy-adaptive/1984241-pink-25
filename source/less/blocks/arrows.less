@@ -1,0 +1,45 @@
+.arrows {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.arrows__arrow-button {
+  position: relative;
+  // bottom: 70px;
+  // display: inline-block;
+  // vertical-align: middle;
+  // box-sizing: border-box;
+  padding: 0;
+  width: 22px;
+  height: 41px;
+  border: 0;
+  font-style: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.arrows__arrow-button::before {
+  content: "";
+  position: absolute;
+  top: -44px;
+  width: 27px;
+  height: 27px;
+  border-bottom: none;
+  border-left: none;
+  border-top: 2px solid @color-dark;
+  border-right: 2px solid @color-dark;
+}
+
+.arrows__arrow-button--prev::before {
+  left: 7px;
+  transform: translateY(-50%) rotate(225deg);
+}
+
+.arrows__arrow-button--next::before {
+  right: 7px;
+  transform: translateY(-50%) rotate(45deg);
+}
