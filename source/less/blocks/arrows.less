@@ -1,5 +1,21 @@
+.arrows__wrapper {
+  position: relative;
+  margin: auto;
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
 .arrows {
+  position: absolute;
+  left: 130px;
+  bottom: 100px;
   display: none;
+  margin: 0 auto;
+  max-width: 900px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: @desktop-width) {
     display: flex;
@@ -10,9 +26,9 @@
 .arrows__arrow-button {
   position: relative;
   // bottom: 70px;
-  // display: inline-block;
-  // vertical-align: middle;
-  // box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
   padding: 0;
   width: 22px;
   height: 41px;
@@ -20,12 +36,13 @@
   font-style: inherit;
   background-color: transparent;
   cursor: pointer;
+  margin-right: 896px;
 }
 
 .arrows__arrow-button::before {
   content: "";
   position: absolute;
-  top: -44px;
+  // top: -44px;
   width: 27px;
   height: 27px;
   border-bottom: none;
