@@ -1,105 +1,49 @@
-.photo-setting {
-  background-color: @color-dim;
-  width: 100%;
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400;
+.photo-setting__container {
+  margin: 0 auto;
+  max-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
-    margin: auto;
-    width: 700px;
+    max-width: 660px;
   }
 
-  // @media (min-width: @desktop-width) {
-
-  // }
+  @media (min-width: @desktop-width) {
+    max-width: 980px;
+  }
 }
 
-.photo-setting__wrap {
+.photo-setting {
+  background-color: @color-dim;
+}
+
+.photo-setting__header {
+  padding-top: 43px;
+  padding-bottom: 42px;
   background-color: @color-light;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.photo-setting__description {
-  width: 280px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  margin-top: 50px;
-  padding-bottom: 20px;
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400;
+  @media (min-width: @tablet-width) {
+    padding-top: 64px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 59px;
+    padding-bottom: 66px;
+  }
 }
 
 .photo-setting__form {
-  width: 280px;
-  margin: auto;
+  background-color: @color-dim;
+}
+
+.photo-setting__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 30px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
-    width: 660px;
-    margin-top: 57px;
-    margin-left: 40px;
-    padding-bottom: 54px;
-    display: flex;
+    font-size: 18px;
   }
-}
-
-.photo-setting__tools-block {
-  padding-left: 45px;
-}
-
-.photo-setting__tools {
-  width: 200px;
-  display: flex;
-  gap: 35px;
-  margin: 47px 0 0 37px;
-
-  @media (min-width: @tablet-width) {
-    flex-direction: column;
-    gap: 50px;
-    margin: 0;
-  }
-}
-
-.photo-setting__tool {
-  padding: 0;
-  border: none;
-  color: inherit;
-  background-color: transparent;
-}
-
-.photo-setting__range {
-  margin: 39px 0 0 40px;
-  width: 240px;
-}
-
-.photo-setting__line {
-  border: none;
-  background-color: @color-dark;
-  color: @color-dark;
-  opacity: 0.1;
-  width: 280px;
-  height: 2px;
-  margin: 32px auto 38px;
-}
-
-.photo-setting__send {
-  display: flex;
-  gap: 12px;
-  flex-direction: column;
-  padding-bottom: 41px;
-}
-
-.photo-setting__button {
-  height: 55px;
-  border: none;
-  border-radius: 30px;
-  border-width: 3px;
-  color: @color-form-headers;
-  border-color: @color-form-headers;
-  // border: 3px solid red;
-  border-style: solid;
 }

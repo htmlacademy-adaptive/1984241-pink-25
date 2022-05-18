@@ -1,27 +1,50 @@
 .contacts {
-  // width: 320px;
   width: 100%;
-  // height: 395px;
+}
+
+.contacts-wrapper {
+  max-width: 1000px;
+  margin: auto;
+
+  // @media (min-width: @tablet-width) {
+  //   max-width: 800px;
+  // }
 }
 
 .contacts__list {
   .drop-list-style;
   // display: flex;
+  // flex-direction: column;
+  // min-width: 660px;
 
   @media (min-width: @tablet-width) {
     display: flex;
+    // flex-direction: row;
     flex-wrap: wrap;
+    gap: 10px;
     // align-content: start;
     justify-content: center;
-    // align-items: center;
-    // width: 700px;
-    // height: 350px;
-    margin: auto;
+    // justify-content: space-around;
+    align-items: center;
+    // max-width: 800px;
+    // height: 100px;
+    // margin: auto;
   }
 
   @media (min-width: @desktop-width) {
-    flex-wrap: nowrap;
-    gap: 40px;
+    margin-bottom: 25px;
+    // flex-wrap: nowrap;
+    .contacts__list-1 {
+      order: 1;
+    }
+
+    .contacts__list-2 {
+      order: 3;
+    }
+
+    .contacts__list-3 {
+      order: 2;
+    }
   }
 }
 
@@ -32,23 +55,31 @@
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
+  width: 250px;
+  margin: auto;
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 55px;
     font-weight: 300;
     width: 370px;
-    margin: auto;
   }
 }
 
 .contacts__list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 15px;
+
   @media (min-width: @tablet-width) {
-    margin: 51px 90px 55px 30px;
+    // margin: 51px 30px 55px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
+    margin: 10px;
   }
 }
 
@@ -59,21 +90,30 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    align-items: baseline;
+    // width: 150px;
+  }
 }
 
 .contacts__list-description {
+  color: @color-form-headers;
   display: flex;
   text-align: center;
   justify-content: center;
   font-size: 24px;
   line-height: 33px;
   font-weight: 300;
+  width: 260px;
+  height: 50px;
 
-  // @media (min-width: @tablet-width) {
-  //   margin: 51px 90px 55px 0;
-  // }
+  @media (min-width: @tablet-width) {
+    padding: 17px;
+  }
 
   @media (min-width: @desktop-width) {
-    padding: 34px;
+    padding-top: 34px;
+    // width: 260px;
   }
 }

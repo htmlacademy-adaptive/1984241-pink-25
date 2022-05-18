@@ -1,98 +1,229 @@
+.advantages-main {
+  color: @color-dark;
+  margin: 0 auto;
+}
+
+.advantages-main__title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28.8px;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.advantages-main__titles {
+  margin: 0 auto;
+  padding: 41px 20px 30px;
+  max-width: 280px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 620px;
+    padding: 47px 12px 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 940px;
+    padding: 63px 12px 52px;
+  }
+}
+
+.advantages-main__title--first {
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .advantages {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  color: @color-text-advant;
   background-color: @color-dim;
   position: relative;
+
+  @media (min-width: @desktop-width) {
+    height: 600px;
+  }
 }
 
-.advantages__intro {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 46px;
+.advantages::before {
+  content: "";
+  position: absolute;
   width: 100%;
+  height: 32px;
+  top: -1px;
+  left: 0;
+  clip-path: polygon(0 100%, 0 0, 100% 0);
   background-color: @color-light;
-}
-
-.advantages__intro-par {
-  margin: auto;
-  width: 280px;
-  min-height: 134px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-size: 24px;
-  line-height: 29px;
-  font-weight: 300;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
-    width: 590px;
-    font-size: 40px;
-    line-height: 55px;
-    font-weight: 300;
+    height: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 100px;
   }
 }
 
-.advantages__wrapper {
+.advantages__container {
+  // padding: 20px;
+  margin: 0 auto;
+  max-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 980px;
+  }
+}
+
+.advantages__list {
   display: flex;
-  flex-direction: column;
-  width: 280px;
+  flex-wrap: wrap;
+  justify-content: center;
   position: relative;
-  padding-top: 53px;
+  margin: auto;
+  padding: 0;
+  padding-top: 82px;
+  padding-bottom: 286px;
+  // max-width: 610px;
+  list-style: none;
+  // background-color: @color-dim;
+  background-image: url("/img/img-back/iphone-screen-mobile@1x.png");
+  background-position: 50% 510px;
+  background-repeat: no-repeat;
+  z-index: 2;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/img-back/iphone-screen-mobile@2x.png");
+    background-size: 157px 320px;
+  }
 
   @media (min-width: @tablet-width) {
-    height: 500px;
-    // min-width: 300px;
-    // flex-direction: row;
-    flex-wrap: wrap-reverse;
-    align-content: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 75px 0 11px;
+    background-image: url("/img/img-back/iphone-screen-3-tablet@1x.png");
+    background-size: 268px 481px;
+    background-position: 0% 7px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/img-back/iphone-screen-3-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 4px 0 11px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 20px;
+    background-image: none;
   }
 }
 
-.advantages__main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 280px;
-  height: 14px;
+.advantages__item {
+  width: 280px;
+  text-align: center;
+  line-height: 24px;
+  margin-bottom: 31px;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 300px;
+    width: 310px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 339px;
+    margin-right: 0;
+    margin-left: 0;
+    width: 240px;
+    text-align: center;
+    background-size: 292px 302px;
+  }
+
+  &--first {
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/img-back/iphone-screen-1-desktop@1x.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/img-back/iphone-screen-1-desktop@2x.png");
+      }
+    }
+  }
+
+  &--second {
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/img-back/iphone-screen-2-desktop@1x.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/img-back/iphone-screen-2-desktop@2x.png");
+      }
+    }
+  }
+
+  &--third {
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/img-back/iphone-screen-3-desktop@1x.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/img-back/iphone-screen-3-desktop@2x.png");
+      }
+    }
+  }
+}
+
+.advantages__title {
   font-size: 18px;
   font-weight: 700;
-  color: @color-dark;
-}
-
-.advantages__main-description {
-  margin: 24px auto;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  min-width: 280px;
-  min-height: 58px;
-  font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
-  color: @color-dark;
-}
-
-.advantages__phone-image {
-  margin: 48px auto;
+  margin: 0;
+  color: @color-text-advant;
+  margin-bottom: 12px;
 
   @media (min-width: @tablet-width) {
-    // flex-wrap: wrap;
-    // flex-basis: 100%;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 0;
   }
 }
 
-.advantages__screen-image {
-  width: 136px;
-  height: 245px;
-  position: absolute;
-  top: 540px;
-  left: 72px;
+.advantages__description {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
 
-  @media (min-width: @tablet-width) {
-    top: 140px;
-    left: -145px;
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 21px;
   }
 }
