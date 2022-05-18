@@ -8,114 +8,162 @@
   </head>
   <body class="page">
     <header class="main-header main-header__catalog">
-        <nav class="main-nav main-nav-close">
-        <a class="main-nav__logo" href="/index.html">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="/img/svg/logotype-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="/img/svg/logotype-white-tablet.svg">
-            <img src="/img/svg/pink.svg" alt="Pink">
-          </picture>
-        </a>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list main-nav__list--closed main-nav__list--nojs">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="../index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="../catalog.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-        <div class="main-nav__toggle-wrapper main-nav__toggle-wrapper--active">
-          <a class="main-nav__toggle" href="#" aria-label="Открыть меню">
-            <span class="main-nav__toggle-span"></span>
+      <div class="main-header__top">
+        <div class="main-header__top-wrapper">
+          <a class="main-header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 960px)" srcset="/img/svg/logotype-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="/img/svg/logotype-white-tablet.svg">
+              <img src="/img/svg/pink.svg" alt="Pink">
+            </picture>
           </a>
+            <button class="main-header__toggle main-header__toggle—-active" type="button" aria-label="Раскрыть меню"></button>
+            <nav class="main-nav main-nav--closed main-nav--nojs">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="catalog.html">Фотографии</a>
+                </li>
+                <li class="main-nav__item main-nav__item--active">
+                  <a class="main-nav__link" href="#">Конкурс</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <h1 class="visually-hidden">Каталог приложения PINK.</h1>
-      </nav>
+        <h1 class="visually-hidden">Заявка на конкурс PINK.</h1>
       <h2 class="main-header__offer">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </header>
-      <main class="form">
-        <form class="form-send" action="#">
-          <p class="form-send__main-description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-          <div class="form-send__orders">
-            <fieldset class="form-send__user">
-            <div class="form-send__wrap">
-              <label class="form-send__label" for="lname">ФАМИЛИЯ:</label>
-              <input class="form-send__input" type="text" id="lname" name="lname" value="Укажите фамилию *">
-              <label class="form-send__label" for="fname">ИМЯ:</label>
-              <input class="form-send__input" type="text" id="fname" name="fname" value="Введите ваше имя *">
-              <label class="form-send__label" for="pname">ОТЧЕСТВО:</label>
-              <input class="form-send__input" type="text" id="pname" name="pname" value="Ну и отчество тоже">
+    <main class="form-send">
+      <h2 class="visually-hidden">Заявка на участие в конкурсе</h2>
+        <div class="form-send__subtitle-wrapper form-send__container">
+          <p class="form-send__subtitle">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="subtitle subtitle-additional"> Пожалуйста, заполните форму ниже:</span></p>
+        </div>
+        <form class="form-send__action" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form-send__credentials-wrapper">
+            <div class="form-send__container">
+              <fieldset class="form-send__credentials form-send__fieldset">
+                <ul class="form-send__list">
+                  <li class="form-send__credentials-item">
+                    <label class="form-send__label form-send__label-credentials" for="lastname">Фамилия:</label>
+                    <input class="form-send__input form-send__input-credentials" type="text" id="lastname" name="lastname"
+                    placeholder="Укажите фамилию *" required>
+                  </li>
+                  <li class="form-send__credentials-item">
+                    <label class="form-send__label form-send__label-credentials" for="firstname">Имя:</label>
+                    <input class="form-send__input form-send__input-credentials" type="text" id="firstname" name="firstname"
+                    placeholder="Введите ваше имя *" required>
+                  </li>
+                  <li class="form-send__credentials-item">
+                    <label class="form-send__label form-send__label-credentials" for="middlename">Отчество:</label>
+                    <input class="form-send__input form-send__input-credentials" type="text" id="middlename" name="middlename"
+                    placeholder="Ну и отчество тоже">
+                  </li>
+                </ul>
+              </fieldset>
             </div>
-            </fieldset>
-            <fieldset class="form-send__checkboxes">
-              <p class="form-send__description">Ваши безбашенные достижения в путешествии</p>
-              <ul class="form-send__ul">
-                <li class="form-send__li">
-                  <input class="form-send__checkbox" type="checkbox" id="progress" name="progress" checked>
-                  <label class="form-send__checkbox-label" for="progress">Сделал селфи с акулой</label>
-                </li>
-                <li class="form-send__li">
-                  <input class="form-send__checkbox" type="checkbox" id="progress1" name="progress" checked>
-                  <label class="form-send__checkbox-label" for="progress1">Обгорел на пляже</label>
-                </li>
-                <li class="form-send__li">
-                  <input class="form-send__checkbox" type="checkbox" id="progress2" name="progress">
-                  <label class="form-send__checkbox-label" for="progress2">Видел Чака Норриса</label>
-                </li>
-                <li class="form-send__li">
-                  <input class="form-send__checkbox" type="checkbox" id="progress3" name="progress">
-                  <label class="form-send__checkbox-label" for="progress3">Накупил сувениров</label>
-                </li>
-                <li class="form-send__li">
-                  <input class="form-send__checkbox" type="checkbox" id="progress4" name="progress">
-                  <label class="form-send__checkbox-label" for="progress4">Удержал башню</label>
-                </li>
-                <li class="form-send__li">
-                  <input class="form-send__checkbox" type="checkbox" id="progress5" name="progress" checked>
-                  <label class="form-send__checkbox-label" for="progress">Разгромил отель</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form-send__contact">
-              <label class="form-send__label" for="lname">НОМЕР ТЕЛЕФОНА</label>
-              <input class="form-send__input" type="tel" id="tel" name="tel" value="Номер, пожалуйста">
-              <label class="form-send__label" for="email">АДРЕС ПОЧТЫ</label>
-              <input class="form-send__input" type="email" id="email" name="email" value="Введите почту *">
-            </fieldset>
-            <fieldset class="form-send__platform">
-              <p class="form-send__description">С каким приложением путешествовали?</p>
-              <ul class="form-send__radio-list">
-                <li class="form-send__radio-item">
-                  <input class="form-send__radio" type="radio" id="ios" name="platf" value="iOS" checked>
-                  <label class="form-send__radio-label" for="ios">Pink для iOS</label>
-                </li>
-                <li class="form-send__radio">
-                  <input class="form-send__radio" type="radio" id="android" name="platf" value="Pink на Android">
-                  <label class="form-send__radio-label" for="android">Pink на Android</label>
-                </li>
-                <li class="form-send__radio">
-                  <input class="form-send__radio" type="radio" id="Windows" name="platf" value="Windows Phone">
-                  <label class="form-send__radio-label" for="Windows">Windows Phone</label>
-                </li>
-              </ul>
-            </fieldset>
           </div>
-          <fieldset class="form-send__comment user">
-            <p class="form-send__description">ОПИШИТЕ СВОИ ЭМОЦИИ</p>
-            <textarea class="form-send__textarea" name="story" id="story" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </fieldset>
-          <button class="form-send__button" type="submit" name="send" value="Отправить">Отправить форму</button>
+          <div class="form-send__achievements-wrapper">
+            <div class="form-send__container">
+              <fieldset class="form-send__achievements form-send__fieldset">
+                <legend class="form-send__legend form-send__legend--achievements">
+                  <span class="form-send__legend-text">ваши безбашенные достижения в путешествии</span>
+                </legend>
+                <ul class="form-send__list form-send__list--achievements">
+                  <li class="form-send__achievements-item">
+                    <input class="form-send__checkbox visually-hidden" type="checkbox" id="shark" name="achievements" value="shark" checked>
+                    <label class="form-send__label-checkbox" for="shark">Сделал селфи с акулой</label>
+                  </li>
+                  <li class="form-send__achievements-item">
+                    <input class="form-send__checkbox visually-hidden" type="checkbox" id="beach" name="achievements" value="beach" checked>
+                    <label class="form-send__label-checkbox" for="beach">Обгорел на пляже</label>
+                  </li>
+                  <li class="form-send__achievements-item">
+                    <input class="form-send__checkbox visually-hidden" type="checkbox" id="chucknorris" name="achievements" value="chuck">
+                    <label class="form-send__label-checkbox" for="chucknorris">Видел Чака Норриса</label>
+                  </li>
+                  <li class="form-send__achievements-item">
+                    <input class="form-send__checkbox visually-hidden" type="checkbox" id="souvenirs" name="achievements" value="souvenirs">
+                    <label class="form-send__label-checkbox" for="souvenirs">Накупил сувениров</label>
+                  </li>
+                  <li class="form-send__achievements-item">
+                    <input class="form-send__checkbox visually-hidden" type="checkbox" id="tower" name="achievements" value="tower" checked>
+                    <label class="form-send__label-checkbox" for="tower">Удержал башню</label>
+                  </li>
+                  <li class="form-send__achievements-item">
+                    <input class="form-send__checkbox visually-hidden" type="checkbox" id="hotel" name="achievements" value="hotel">
+                    <label class="form-send__label-checkbox" for="hotel">Разгромил отель</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+          </div>
+          <div class="form-send__contacts-wrapper">
+            <div class="form-send__container">
+              <fieldset class="form-send__contacts form-send__fieldset">
+                <legend class="form-send__legend form-send__legend--contacts">
+                  <span class="form-send__legend-text">контактная информация</span>
+                </legend>
+                <ul class="form-send__list form-send__list--contacts">
+                  <li class="form-send__contacts-item form-send__contacts-item--phone">
+                    <label class="form-send__label form-send__label--contacts" for="phone">Номер телефона</label>
+                    <input class="form-send__input form-send__input--contacts" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
+                  </li>
+                  <li class="form-send__contacts-item form-send__contacts-item--email">
+                    <label class="form-send__label form-send__label--contacts" for="email">Адрес почты</label>
+                    <input class="form-send__input form-send__input--contacts" type="email" id="email" name="email" placeholder="Введите почту *" required>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+          </div>
+          <div class="form-send__app-wrapper">
+            <div class="form-send__container">
+              <fieldset class="form-send__app form-send__fieldset">
+                <legend class="form-send__legend form-send__legend--app">
+                  <span class="form-send__legend-text">с каким приложением путешествовали?</span>
+                </legend>
+                <ul class="form-send__list form-send__list--app">
+                  <li class="form-send__app-item">
+                    <input class="form-send__radio visually-hidden" type="radio" id="ios" name="app" value="one"
+                      checked>
+                    <label class="form-send__label-radio" for="ios">Pink для iOS</label>
+                  </li>
+                  <li class="form-send__app-item">
+                    <input class="form-send__radio visually-hidden" type="radio" id="android" name="app" value="two">
+                    <label class="form-send__label-radio" for="android">Pink на Android</label>
+                  </li>
+                  <li class="form-send__app-item">
+                    <input class="form-send__radio visually-hidden" type="radio" id="windows" name="app" value="three">
+                    <label class="form-send__label-radio" for="windows">Windows Phone</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+          </div>
+          <div class="form-send__emotions-wrapper">
+            <div class="form-send__container">
+              <fieldset class="form-send__emotions form-send__fieldset">
+                <legend class="form-send__legend form-send__legend--emotions">
+                  <span class="form-send__legend-text">опишите свои эмоции</span>
+                </legend>
+                <textarea class="form-send__textarea" name="message"
+                placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </fieldset>
+            </div>
+          </div>
+          <div class="form-send__submit-wrapper form-send__container">
+            <button class="form-send__button" type="submit">Отправить форму</button>
+            <p class="form-send__note"><span class="form-send__star">*</span>—
+              обязательные<span class="form-send__note-star"> для заполнения</span> поля</p>
+          </div>
         </form>
-        <p class="form__note">* — обязательные поля</p>
-      </main>
+    </main>
       <footer class="footer-social">
         <div class="footer-social__wrap">
           <a class="footer-social__logo-glasses" href="#">
@@ -179,7 +227,7 @@
         <p class="modal-form__text modal-form__text--success">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
       </div>
       <div class="modal-form__bottom modal-form__bottom--success">
-        <button class="button button--form">закрыть окно</button>
+        <button class="modal-form__bottom-all button--form">закрыть окно</button>
       </div>
     </div>
     <div class="modal-form modal-form--failure">
@@ -188,7 +236,7 @@
         <p class="modal-form__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       </div>
       <div class="modal-form__bottom modal-form__bottom--failure">
-        <button class="button button--form">ок</button>
+        <button class="modal-form__bottom-all button--form">ок</button>
       </div>
     </div>
   </body>

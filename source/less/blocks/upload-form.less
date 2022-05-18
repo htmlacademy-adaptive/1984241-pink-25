@@ -164,7 +164,6 @@
   }
 }
 
-
 .upload-form__filter-range::-webkit-slider-runnable-track {
   box-sizing: border-box;
   border: none;
@@ -182,6 +181,10 @@
   border-radius: 50%;
   background-color: @color-light;
   cursor: pointer;
+}
+
+.upload-form__filter-range::-webkit-slider-thumb:active {
+  background-color: @color-form-headers;
 }
 
 .upload-form__buttons {
@@ -207,7 +210,7 @@
 }
 
 .upload-form__icon-button {
-  fill: @color-dark;
+  fill: @color-dark-03;
 }
 
 .upload-form__icon-button--current {
