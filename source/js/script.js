@@ -13,9 +13,10 @@
       }
     });
     
+    // const btnToggle = document.querySelector('.main-header__toggle');
     const mainHeader = document.querySelector('.main-header__top');
 
     navToggle.addEventListener('click', function() {
-       navToggle.classList.toggle('main-header__toggle--active');
-       mainHeader.classList.toggle('main-header__top--active');
+      navToggle.classList.toggle('main-header__toggle--active');
+      mainHeader.classList.toggle('main-header__top--active');
     })
