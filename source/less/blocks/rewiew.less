@@ -6,13 +6,13 @@
   min-height: 220px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 41px;
+    padding-top: 0;
     padding-bottom: 13px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 185px;
-    padding-bottom: 40px;
+    padding-bottom: 0;
     background-image: url("/img/decor/quotes.png");
     background-repeat: no-repeat;
     background-position: 50% 73px;
@@ -25,6 +25,7 @@
 
   @media (min-width: @tablet-width) {
     width: 620px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -63,11 +64,17 @@
     // line-height: 30px;
     // font-weight: 700;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .review__author-posicion {
+  display: none;
+
   @media (max-width: @tablet-width) {
-    display: none;
+    display: contents;
   }
 
   @media (min-width: @tablet-width) {
@@ -77,6 +84,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    display: contents;
     font-size: 18px;
   }
 }
@@ -91,11 +99,17 @@
   font-weight: 400;
 
   @media (min-width: @tablet-width) {
-    padding: 10px;
+    padding-top: 14px;
+    padding-bottom: 35px;
     min-width: 640px;
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+    width: 688px;
   }
 }
 
