@@ -5,35 +5,39 @@
 .contacts-wrapper {
   max-width: 1000px;
   margin: auto;
-
+  // min-width: 395px;
+  // padding-top: 19px;
+  // padding-bottom: 20px;
   // @media (min-width: @tablet-width) {
-  //   max-width: 800px;
+  // max-width: 800px;
   // }
 }
 
 .contacts__list {
   .drop-list-style;
-  // display: flex;
-  // flex-direction: column;
-  // min-width: 660px;
+  padding-bottom: 17px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     // flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
-    // align-content: start;
+    // gap: 10px;
     justify-content: center;
-    // justify-content: space-around;
-    align-items: center;
-    // max-width: 800px;
-    // height: 100px;
-    // margin: auto;
+    margin-bottom: -32px;
+
+    // .contacts__list-1 {
+    //   margin-left: 103px;
+    // }
+
+    // .contacts__list-2 {
+    //   // margin-right: 23px;
+    // }
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 25px;
-    // flex-wrap: nowrap;
+    margin-bottom: -40px;
+    gap: 40px;
+
     .contacts__list-1 {
       order: 1;
     }
@@ -57,22 +61,34 @@
   font-weight: 300;
   width: 250px;
   margin: auto;
+  padding-top: 42px;
+  padding-bottom: 35px;
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 55px;
     font-weight: 300;
     width: 370px;
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 65px;
+    font-size: 50px;
+    line-height: 69px;
+    width: 462px;
+    padding-bottom: 25px;
   }
 }
 
 .contacts__list-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
-  margin: 20px;
-  padding: 15px;
+  padding-bottom: 3px;
+  // margin: 20px;
+  // padding: 5px;
 
   @media (min-width: @tablet-width) {
     // margin: 51px 30px 55px;
@@ -93,6 +109,7 @@
 
   @media (min-width: @tablet-width) {
     align-items: baseline;
+    // padding-right: 55px;
     // width: 150px;
   }
 }
@@ -106,14 +123,20 @@
   line-height: 33px;
   font-weight: 300;
   width: 260px;
-  height: 50px;
+  padding-bottom: 16px;
+  // padding-top: 18px;
+  // height: 50px;
 
   @media (min-width: @tablet-width) {
     padding: 17px;
+    padding-top: 5px;
+    padding-bottom: 37px;
+    // padding-right: 60px;
+    // padding-right: 10px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 34px;
+    padding-top: 24px;
     // width: 260px;
   }
 }

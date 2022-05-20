@@ -6,22 +6,27 @@
     background-color: @color-light;
     color: #000000;
     padding-top: 54px;
-    padding-bottom: 109px;
+    padding-bottom: 85px;
   }
 
   @media (min-width: @desktop-width) {
     background-color: @color-dim;
-    padding-top: 17px;
-    padding-bottom: 67px;
+    padding-top: 30px;
+    padding-bottom: 37px;
   }
 }
 
 .day__inner {
   @media (min-width: @tablet-width) {
     display: flex;
-    max-width: 660px;
+    max-width: 600px;
     margin: auto;
-    gap: 30px;
+    // gap: 30px;
+    // padding-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 660px;
   }
 }
 
@@ -38,13 +43,18 @@
   // background-size: 238px 276px;
   background-repeat: no-repeat;
 
+  @media (min-width: @tablet-width) {
+    margin-right: 64px;
+    margin-left: -11px;
+  }
+
   @media (min-width: @desktop-width) {
     font-weight: 700;
     font-size: 120px;
     line-height: 163px;
     padding: 108px 80px 106px 80px;
-    margin-right: 71px;
-    margin-left: -150px;
+    margin-right: 62px;
+    margin-left: -140px;
     // margin-left: 131px;
     background-image: url("/img/img-back/timer-desktop.png");
     // background-size: 298px 345px;
@@ -79,13 +89,17 @@
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  margin-top: 48px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 40px;
+    padding-left: 10px;
+  }
 
   @media (min-width: @desktop-width) {
     font-weight: 700;
     font-size: 30px;
     line-height: 30px;
-    margin-top: 98px;
+    margin-top: 55px;
 
     & br {
       display: none;
@@ -102,13 +116,18 @@
   margin-bottom: 24px;
   width: 300px;
 
+  @media (min-width: @tablet-width) {
+    margin: 10px;
+  }
+
   @media (min-width: @desktop-width) {
-    width: 530px;
+    width: 521px;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    margin-top: 37px;
-    margin-bottom: 47px;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-bottom: 32px;
     // max-width: 540px;
 
     & br {
@@ -123,6 +142,10 @@
   font-size: 14px;
   line-height: 24px;
   color: @color-form-headers;
+
+  @media (min-width: @tablet-width) {
+    padding: 10px;
+  }
 
   @media (min-width: @desktop-width) {
     font-weight: 400;
