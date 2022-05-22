@@ -1,40 +1,10 @@
-// .map {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   margin: 40px;
-// }
-
-// .map::before {
-//   content: "";
-//   position: relative;
-//   background-image: url("../img/img-back/triangle white footer.png");
-//   // background-repeat: no-repeat;
-//   width: 1200px;
-//   height: 123px;
-//   left: 20px;
-//   background-color: aqua;
-//   z-index: 2;
-// }
-
-// .map__image {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   position: relative;
-// }
-
-// .map__marker {
-//   position: absolute;
-//   background-image: url("../img/svg/map_marker.svg");
-//   background-repeat: no-repeat;
-// }
-
 .map {
   margin: auto;
   position: relative;
-  // height: 200px;
-  // margin-top: 57px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: -15px;
+  }
 }
 
 .map::before {
