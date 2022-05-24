@@ -1,11 +1,10 @@
-// new
-
 .main-header {
   background: @color-dark-background url("/img/img-back/back-mobile@1x.jpg") no-repeat;
   background-position: 50% 0;
   // background-size: auto;
+  // background-size: cover;
   background-size: 320px 462px;
-  object-fit: scale-down;
+  // object-fit: scale-down;
 
   @media (min-resolution: 2dppx) {
     background-image: url("/img/img-back/back-mobile@2x.jpg");
@@ -15,23 +14,26 @@
   @media (min-width: @tablet-width) {
     background: @color-dark-background url("/img/img-back/back-tablet@1x.jpg") no-repeat;
     background-position: 50% 0;
-    // background-size: cover;
-    background-size: 660px 729px;
+    background-size: cover;
+    // background-size: 660px 729px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("/img/img-back/back-tablet@2x.jpg");
-      background-size: 660px 729px;
+      // background-size: 660px 729px;
+      background-size: cover;
     }
   }
 
   @media (min-width: @desktop-width) {
     background: @color-dark-background url("/img/img-back/back-desktop@1x.jpg") no-repeat;
     background-position: 50% 0;
-    background-size: 1200px 853px;
+    // background-size: 100% 853px;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("/img/img-back/back-desktop@2x.jpg");
-      background-size: 1200px 853px;
+      // background-size: 100% 853px;
+      background-size: cover;
     }
   }
 }
@@ -46,7 +48,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 33px 20px 37px;
+    padding: 28px 20px 42px;
   }
 }
 

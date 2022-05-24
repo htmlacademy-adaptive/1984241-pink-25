@@ -132,7 +132,7 @@
   background-color: @color-dim;
 
   @media (min-width: @tablet-width) {
-    justify-content: flex-end;
+    // display: block;
     padding-left: 30px;
     width: 300px;
     height: 155px;
@@ -141,16 +141,9 @@
     gap: 12px;
   }
 
-  // @media (min-width: @tablet-width) {
-  //   display: block;
-  //   padding-left: 30px;
-  //   width: 300px;
-  //   height: 155px;
-  //   padding-top: 23px;
-  //   margin-bottom: 20px;
-  // }
-
   @media (min-width: @desktop-width) {
+    display: block;
+    padding-top: 26px;
     margin-bottom: 55px;
     padding-left: 27px;
   }
@@ -231,6 +224,22 @@
   @media (min-width: @tablet-width) {
     margin: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 37px;
+  }
+}
+
+.catalog-list__like-levon {
+  margin-top: 13px;
+}
+
+.catalog-list__like-boris {
+  margin-top: 13px;
+}
+
+.catalog-list__heart-serg {
+  margin-left: 15px;
 }
 
 .catalog-list__like-hit {
@@ -256,11 +265,12 @@
 }
 
 .catalog-list__number {
-  font-size: 13px;
+  font-size: 12px;
   line-height: 24px;
   font-weight: 400;
   margin-left: 15px;
   color: @color-form-headers;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     order: 1;
