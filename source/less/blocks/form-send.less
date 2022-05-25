@@ -25,6 +25,11 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 90px;
+    padding-bottom: 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 90px;
     padding-bottom: 54px;
   }
 }
@@ -109,7 +114,8 @@
 
   @media (min-width: @tablet-width) {
     order: 3;
-    padding-top: 7px;
+    padding-top: 0;
+    padding-bottom: 49px;
   }
 
   @media (min-width: @desktop-width) {
@@ -286,13 +292,13 @@
 
 .form-send__contacts-item--phone::after {
   @media (min-width: @tablet-width) {
-    background-image: url("../img/svg/phone-icon.webp");
+    background-image: url("../img/svg/phone-icon.svg");
   }
 }
 
 .form-send__contacts-item--email::after {
   @media (min-width: @tablet-width) {
-    background-image: url("../img/svg/mail-icon.webp");
+    background-image: url("../img/svg/mail-icon.svg");
   }
 }
 
@@ -418,7 +424,7 @@
 
 .form-send__input {
   display: block;
-  padding: 14px 20px 15px;
+  padding: 15px 20px 16px;
   font-size: 18px;
   font-family: inherit;
   box-sizing: border-box;
