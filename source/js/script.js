@@ -19,4 +19,3 @@
       navToggle.classList.toggle('main-header__toggle--active');
       mainHeader.classList.toggle('main-header__top--active');
     })
-    
