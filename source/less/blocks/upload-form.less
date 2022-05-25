@@ -98,9 +98,6 @@
   border: 0;
   background-color: transparent;
   cursor: pointer;
-
-  // @media (min-width: @tablet-width) {
-  // }
 }
 
 .upload-form__filter {
@@ -206,10 +203,18 @@
 
   @media (min-width: @tablet-width) {
     width: 260px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: @desktop-width) {
     width: 183px;
+    margin-bottom: 13px;
+  }
+}
+
+.upload-form__button-bottom {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -224,4 +229,49 @@
 .upload-form__filter-range,
 .upload-form__filter-range::-webkit-slider-thumb {
   appearance: none;
+}
+
+.upload-form__icon--crop {
+  width: 44px;
+  height: 44px;
+
+  @media (min-width: @tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.upload-form__icon--fill {
+  width: 48px;
+  height: 43px;
+
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 48px;
+    height: 43px;
+  }
+}
+
+.upload-form__icon--contrast {
+  width: 32px;
+  height: 32px;
+
+  @media (min-width: @tablet-width) {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 32px;
+    height: 32px;
+  }
 }

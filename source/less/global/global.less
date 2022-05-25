@@ -8,6 +8,7 @@ html {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   color: @color-dark;
+  height: 100%;
 }
 
 .visually-hidden {
@@ -24,8 +25,10 @@ html {
 }
 
 .page {
-  // width: 100%;
   margin: 0 auto;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }
 
 .page-wrapper {
