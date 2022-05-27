@@ -1,10 +1,8 @@
 .modal-form {
   position: absolute;
-  top: 1310px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 320px;
-  height: 289px;
   background-color: @color-light;
   text-align: center;
   box-shadow: 0 7px 15px @color-dim;
@@ -21,39 +19,29 @@
 
 .modal-form--success {
   display: none;
-  position: absolute;
-  top: 1830px;
-  height: 379px;
-
-  @media (min-width: @tablet-width) {
-    top: 1611px;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 1502px;
-  }
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal-form--failure {
   display: none;
-  position: absolute;
-  top: 1007px;
-  height: 363px;
-
-  @media (min-width: @desktop-width) {
-    height: 377px;
-  }
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal-form__top {
   padding: 38px 20px 2px 20px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 3px;
+    padding-top: 38px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 38px 20px 2px 20px;
+    padding: 38px 20px 0;
   }
 }
 
@@ -75,12 +63,15 @@
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
-    width: 295px;
+    width: 299px;
     padding: 17px 15px;
   }
+}
 
+.modal-form__bottom-all--success {
   @media (min-width: @desktop-width) {
     width: 460px;
+    padding: 17px 150px;
   }
 }
 
@@ -90,26 +81,27 @@
   justify-content: center;
 
   @media (min-width: @tablet-width) {
-    padding: 45px 20px 49px 20px;
+    padding: 47px 20px 49px;
   }
 }
 
 .modal-form__bottom--success {
   background-color: @color-dim;
+  padding: 50px 20px 48px;
 
   @media (min-width: @desktop-width) {
-    padding: 54px 20px 91px 20px;
+    padding: 50px 20px 50px;
   }
 }
 
 .modal-form__bottom--failure {
   @media (min-width: @tablet-width) {
-    padding: 33px 20px 49px 20px;
+    padding: 33px 20px 49px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 110px 20px 49px 20px;
-    width: 340px;
+    background-color: @color-dim;
+    padding: 52px 20px 49px;
     margin: auto;
   }
 }
@@ -177,20 +169,24 @@
     font-weight: 400;
     width: 320px;
     padding-top: 23px;
+    padding-bottom: 28px;
   }
 
   @media (min-width: @desktop-width) {
     width: 378px;
+    padding-top: 25px;
+    padding-bottom: 37px;
   }
 }
 
 .modal-form__text--fail {
   @media (min-width: @tablet-width) {
     width: 320px;
-    padding-top: 25px;
+    padding-top: 22px;
   }
 
   @media (min-width: @desktop-width) {
     width: 378px;
+    padding-bottom: 60px;
   }
 }

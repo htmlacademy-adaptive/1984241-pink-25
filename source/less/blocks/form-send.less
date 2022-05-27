@@ -42,7 +42,7 @@
   padding-bottom: 30px;
 
   @media (min-width: @tablet-width) {
-    .visually-hidden__form {
+    .visually-hidden--form {
       display: contents;
     }
     font-size: 18px;
@@ -186,7 +186,7 @@
   border: none;
 
   @media (min-width: @tablet-width) {
-    border: 2px solid @color-dim2;
+    border: 2px solid @color-dim-dark;
     border-radius: 2px;
   }
 }
@@ -268,7 +268,7 @@
       right: 2px;
       width: 60px;
       height: 58px;
-      background-color: @color-dim2;
+      background-color: @color-dim-dark;
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -408,8 +408,17 @@
   min-height: 62px;
   width: 100%;
   border-radius: 1px;
-  border: 2px solid @color-dim2;
+  border: 2px solid @color-dim-dark;
   color: @color-dark;
+
+  &:hover,
+  &:focus {
+    border-color: @color-text-advant;
+  }
+
+  &:active {
+    outline-color: @color-form-headers;
+  }
 }
 
 .form-send__input::placeholder {
@@ -508,7 +517,7 @@
   transform: translateY(-50%);
   width: 35px;
   height: 35px;
-  border: 2px solid @color-dim2;
+  border: 2px solid @color-dim-dark;
   border-radius: 2px;
   background-color: @color-light;
 }
@@ -555,7 +564,7 @@
   height: 40px;
   border-width: 2px;
   border-style: solid;
-  border-color: @color-dim2;
+  border-color: @color-dim-dark;
   border-radius: 50%;
   background-color: @color-light;
 }
@@ -589,7 +598,7 @@
   padding: 14px 18px;
   min-height: 200px;
   resize: vertical;
-  border: 2px solid @color-dim2;
+  border: 2px solid @color-dim-dark;
   border-radius: 1px;
 
   @media (min-width: @tablet-width) {

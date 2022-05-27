@@ -10,12 +10,9 @@
 .arrows__sides {
   position: absolute;
   left: 130px;
-  bottom: 100px;
   display: none;
-  margin: 0 auto;
-  max-width: 900px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 940px;
+  width: 100%;
 
   @media (min-width: @desktop-width) {
     display: flex;
@@ -36,11 +33,14 @@
   font-style: inherit;
   background-color: transparent;
   cursor: pointer;
-  margin-right: 896px;
 
-  @media (min-width: @desktop-width) {
-    margin-right: 940px;
-    right: 20px;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -51,8 +51,8 @@
   height: 27px;
   border-bottom: none;
   border-left: none;
-  border-top: 2px solid @color-dark-03;
-  border-right: 2px solid @color-dark-03;
+  border-top: 2px solid @color-dark-arrow;
+  border-right: 2px solid @color-dark-arrow;
 }
 
 .arrows__arrow-button--prev::before {
@@ -61,6 +61,6 @@
 }
 
 .arrows__arrow-button--next::before {
-  right: 7px;
+  left: -10px;
   transform: translateY(-50%) rotate(45deg);
 }

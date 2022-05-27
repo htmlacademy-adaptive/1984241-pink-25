@@ -32,7 +32,7 @@
 }
 
 .main-header__top {
-  padding: 21px 25px;
+  padding: 18px 25px;
   background-color: @color-dark-nav;
   position: relative;
 
@@ -71,6 +71,44 @@
 
   @media (min-width: @tablet-width) {
     max-width: 145px;
+  }
+}
+
+.main-header__logo-top {
+  fill: @color-light;
+
+  &:hover {
+    fill: @color-form-headers;
+  }
+
+  &:active {
+    fill: @color-border-light;
+  }
+}
+
+.main-header__logo-top--visible-phone {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__logo-top--visible-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-header__logo-top--visible-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
 
@@ -252,13 +290,13 @@
 
 .main-header__link-app:active {
   background-color: @color-light;
-  color: @color-form-headers-03;
+  color: @color-form-headers-dark;
 }
 
 .main-header__link-app:active,
 .main-header__link-app:focus {
   background-color: @color-light;
-  color: @color-form-headers-03;
+  color: @color-form-headers-dark;
 }
 
 .main-header__list {
@@ -304,7 +342,7 @@
   }
 }
 
-.main-header__catalog {
+.main-header--catalog {
   background: @color-dark-background url("/img/img-back/back-mobile@1x.jpg") no-repeat;
   background-size: cover;
   height: 237px;
