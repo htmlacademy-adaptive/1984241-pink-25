@@ -139,6 +139,13 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: @color-form-headers;
+    color: @color-form-headers;
+    box-shadow: @color-form-headers;
+  }
 }
 
 .main-header__toggle::before {
