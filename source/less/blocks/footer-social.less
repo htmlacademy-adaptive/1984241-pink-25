@@ -46,6 +46,10 @@
     justify-content: center;
     align-items: baseline;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer-social__icon {
@@ -55,6 +59,15 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 16px;
+  }
+}
+
+.footer-social__icon-pink {
+  fill: @color-dark;
+
+  &:focus,
+  &:hover {
+    fill: @color-form-headers;
   }
 }
 
@@ -104,5 +117,18 @@
     font-size: 18px;
     line-height: 18px;
     font-weight: 400;
+  }
+}
+
+.footer-social__copyright-academy {
+  fill: @color-form-headers;
+
+  &:focus,
+  &:hover {
+    fill: @color-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
