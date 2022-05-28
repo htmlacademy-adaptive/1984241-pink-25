@@ -32,7 +32,7 @@
 }
 
 .main-header__top {
-  padding: 21px 25px;
+  padding: 21px 20px 19px 20px;
   background-color: @color-dark-nav;
   position: relative;
 
@@ -56,7 +56,10 @@
 .main-header__top-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+
+  @media (min-width: @tablet-width) {
+    align-items: flex-end;
+  }
 
   @media (min-width: @desktop-width) {
     width: 940px;
@@ -71,6 +74,44 @@
 
   @media (min-width: @tablet-width) {
     max-width: 145px;
+  }
+}
+
+.main-header__logo-top {
+  fill: @color-light;
+
+  &:hover {
+    fill: @color-form-headers;
+  }
+
+  &:active {
+    fill: @color-border-light;
+  }
+}
+
+.main-header__logo-top--visible-phone {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__logo-top--visible-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-header__logo-top--visible-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
 
@@ -94,6 +135,15 @@
     display: none;
     padding-bottom: 20px;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: @color-form-headers;
+  }
 }
 
 .main-header__toggle::before {
@@ -108,6 +158,10 @@
   left: 0;
   z-index: 1;
   box-shadow: 0 10px 0 0 @color-light, 0 20px 0 0 @color-light;
+}
+
+.main-header__toggle:hover::before {
+  box-shadow: 0 10px 0 0 @color-form-headers, 0 20px 0 0 @color-form-headers;
 }
 
 .main-header__toggle--active {
@@ -142,6 +196,10 @@
   &:active::after {
     background-color: @color-form-headers;
   }
+}
+
+.main-header__toggle--active:hover::before {
+  box-shadow: none;
 }
 
 .main-header__content-wrapper {
@@ -252,13 +310,13 @@
 
 .main-header__link-app:active {
   background-color: @color-light;
-  color: @color-form-headers-03;
+  color: @color-form-headers-dark;
 }
 
 .main-header__link-app:active,
 .main-header__link-app:focus {
   background-color: @color-light;
-  color: @color-form-headers-03;
+  color: @color-form-headers-dark;
 }
 
 .main-header__list {
@@ -304,34 +362,34 @@
   }
 }
 
-.main-header__catalog {
+.main-header--catalog {
   background: @color-dark-background url("/img/img-back/back-mobile@1x.jpg") no-repeat;
   background-size: cover;
-  height: 237px;
+  min-height: 237px;
   color: @color-dark;
 
   @media (min-resolution: 2dppx) {
     background-image: url("/img/img-back/back-mobile@2x.jpg");
-    height: 237px;
+    min-height: 237px;
   }
 
   @media (min-width: @tablet-width) {
     background-image: url("/img/img-back/back-tablet@1x.jpg");
-    height: 440px;
+    min-height: 440px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("/img/img-back/back-tablet@2x.jpg");
-      height: 440px;
+      min-height: 440px;
     }
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("/img/img-back/back-desktop@2x.jpg");
-    height: 394px;
+    min-height: 394px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("/img/img-back/back-desktop@2x.jpg");
-      height: 394px;
+      min-height: 394px;
     }
   }
 }

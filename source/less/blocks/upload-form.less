@@ -14,7 +14,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 41px 60px 57px 80px;
+    padding: 42px 60px 53px 79px;
   }
 }
 
@@ -214,12 +214,19 @@
 
 .upload-form__button-bottom {
   @media (min-width: @tablet-width) {
-    margin-bottom: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.upload-form__icon {
+  &:hover,
+  &:focus {
+    opacity: 0.5;
   }
 }
 
 .upload-form__icon-button {
-  fill: @color-dark-03;
+  fill: @color-dark-arrow;
 }
 
 .upload-form__icon-button--current {

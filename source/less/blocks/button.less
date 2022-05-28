@@ -32,18 +32,29 @@
 .button--red {
   border-color: @color-form-headers;
   color: @color-form-headers;
-}
 
-.button--red:hover {
-  background-color: @color-form-headers;
+  &:hover {
+    background-color: @color-form-headers;
+    color: @color-light;
+  }
+
+  &:active {
+    color: @color-border-light;
+  }
 }
 
 .button--gray {
-  border-color: @color-dark-01;
-  color: @color-dark-01;
-}
+  border-color: @color-dark-border;
+  color: @color-dark-border;
 
-.button--gray:hover {
-  border-color: @color-dark-03;
-  border-width: 3px;
+  &:hover {
+    border-color: @color-dark-arrow;
+    color: @color-dark-arrow;
+    border-width: 3px;
+  }
+
+  &:active {
+    background-color: @color-dark-arrow;
+    color: @color-light;
+  }
 }
