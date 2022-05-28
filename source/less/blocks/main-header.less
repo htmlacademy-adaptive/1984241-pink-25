@@ -143,8 +143,6 @@
   &:hover::before,
   &:hover::after {
     background-color: @color-form-headers;
-    color: @color-form-headers;
-    box-shadow: @color-form-headers;
   }
 }
 
@@ -160,6 +158,10 @@
   left: 0;
   z-index: 1;
   box-shadow: 0 10px 0 0 @color-light, 0 20px 0 0 @color-light;
+}
+
+.main-header__toggle:hover::before {
+  box-shadow: 0 10px 0 0 @color-form-headers, 0 20px 0 0 @color-form-headers;
 }
 
 .main-header__toggle--active {
@@ -194,6 +196,10 @@
   &:active::after {
     background-color: @color-form-headers;
   }
+}
+
+.main-header__toggle--active:hover::before {
+  box-shadow: none;
 }
 
 .main-header__content-wrapper {
